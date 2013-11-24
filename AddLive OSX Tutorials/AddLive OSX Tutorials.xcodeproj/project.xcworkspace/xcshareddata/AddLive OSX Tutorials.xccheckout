@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>90F591F0-28DB-496C-9B08-77FE50F86AF0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AddLive OSX Tutorials</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F2A39C91-DB1F-4D78-AE5E-1DE5F82B3F68</key>
+		<string>ssh://github.com/stoiczek/addlive-osx-sdk-tutorials.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AddLive OSX Tutorials/AddLive OSX Tutorials.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F2A39C91-DB1F-4D78-AE5E-1DE5F82B3F68</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/stoiczek/addlive-osx-sdk-tutorials.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F2A39C91-DB1F-4D78-AE5E-1DE5F82B3F68</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F2A39C91-DB1F-4D78-AE5E-1DE5F82B3F68</string>
+			<key>IDESourceControlWCCName</key>
+			<string>addlive-osx-sdk-tutorials</string>
+		</dict>
+	</array>
+</dict>
+</plist>
