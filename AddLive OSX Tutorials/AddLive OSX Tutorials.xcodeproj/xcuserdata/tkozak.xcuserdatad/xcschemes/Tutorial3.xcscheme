@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F282F8E718415B9E00D53D96"
-               BuildableName = "Tutorial1.app"
-               BlueprintName = "Tutorial1"
+               BlueprintIdentifier = "F282F9FC18417AD400D53D96"
+               BuildableName = "Tutorial3.app"
+               BlueprintName = "Tutorial3"
                ReferencedContainer = "container:AddLive OSX Tutorials.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,43 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F282F90818415B9E00D53D96"
-               BuildableName = "AddLive OSX TutorialsTests.xctest"
-               BlueprintName = "AddLive OSX TutorialsTests"
-               ReferencedContainer = "container:AddLive OSX Tutorials.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F282F9D1184169CB00D53D96"
-               BuildableName = "Tutorial2Tests.xctest"
-               BlueprintName = "Tutorial2Tests"
-               ReferencedContainer = "container:AddLive OSX Tutorials.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F282FA1618417AD400D53D96"
-               BuildableName = "Tutorial3Tests.xctest"
-               BlueprintName = "Tutorial3Tests"
-               ReferencedContainer = "container:AddLive OSX Tutorials.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F282F8E718415B9E00D53D96"
-            BuildableName = "Tutorial1.app"
-            BlueprintName = "Tutorial1"
+            BlueprintIdentifier = "F282F9FC18417AD400D53D96"
+            BuildableName = "Tutorial3.app"
+            BlueprintName = "Tutorial3"
             ReferencedContainer = "container:AddLive OSX Tutorials.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -81,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F282F8E718415B9E00D53D96"
-            BuildableName = "Tutorial1.app"
-            BlueprintName = "Tutorial1"
+            BlueprintIdentifier = "F282F9FC18417AD400D53D96"
+            BuildableName = "Tutorial3.app"
+            BlueprintName = "Tutorial3"
             ReferencedContainer = "container:AddLive OSX Tutorials.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -99,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F282F8E718415B9E00D53D96"
-            BuildableName = "Tutorial1.app"
-            BlueprintName = "Tutorial1"
+            BlueprintIdentifier = "F282F9FC18417AD400D53D96"
+            BuildableName = "Tutorial3.app"
+            BlueprintName = "Tutorial3"
             ReferencedContainer = "container:AddLive OSX Tutorials.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
