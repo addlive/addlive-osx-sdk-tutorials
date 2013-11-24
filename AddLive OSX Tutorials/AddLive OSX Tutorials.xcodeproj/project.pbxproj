@@ -26,6 +26,35 @@
 		F282F99C1841666700D53D96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F282F99A1841666700D53D96 /* main.m */; };
 		F282F9A11841671700D53D96 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F282F99D1841667000D53D96 /* MainMenu.xib */; };
 		F282F9A41841677C00D53D96 /* Tutorial1.plist in Resources */ = {isa = PBXBuildFile; fileRef = F282F9A21841677C00D53D96 /* Tutorial1.plist */; };
+		F282F9B9184169CB00D53D96 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92218415C0300D53D96 /* Cocoa.framework */; };
+		F282F9BF184169CB00D53D96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F282F9BD184169CB00D53D96 /* InfoPlist.strings */; };
+		F282F9C1184169CB00D53D96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F282F9C0184169CB00D53D96 /* main.m */; };
+		F282F9C5184169CB00D53D96 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F282F9C3184169CB00D53D96 /* Credits.rtf */; };
+		F282F9C8184169CB00D53D96 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F282F9C7184169CB00D53D96 /* ALAppDelegate.m */; };
+		F282F9CB184169CB00D53D96 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F282F9C9184169CB00D53D96 /* MainMenu.xib */; };
+		F282F9CD184169CB00D53D96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F282F9CC184169CB00D53D96 /* Images.xcassets */; };
+		F282F9D3184169CB00D53D96 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F90A18415B9E00D53D96 /* XCTest.framework */; };
+		F282F9D4184169CB00D53D96 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92218415C0300D53D96 /* Cocoa.framework */; };
+		F282F9E518416C7000D53D96 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
+		F282F9E618416C7000D53D96 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
+		F282F9E718416C7000D53D96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
+		F282F9E818416C7000D53D96 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
+		F282F9E918416C7000D53D96 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92318415C0300D53D96 /* QuartzCore.framework */; };
+		F282F9EA18416C7000D53D96 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92418415C0300D53D96 /* ApplicationServices.framework */; };
+		F282F9EB18416C7000D53D96 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92518415C0300D53D96 /* QTKit.framework */; };
+		F282F9EC18416C7000D53D96 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
+		F282F9ED18416C7000D53D96 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
+		F282F9EE18416C7000D53D96 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
+		F282F9EF18416C8E00D53D96 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
+		F282F9F018416C8E00D53D96 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
+		F282F9F118416C8E00D53D96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
+		F282F9F218416C8E00D53D96 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
+		F282F9F318416C8E00D53D96 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92318415C0300D53D96 /* QuartzCore.framework */; };
+		F282F9F418416C8E00D53D96 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92418415C0300D53D96 /* ApplicationServices.framework */; };
+		F282F9F518416C8E00D53D96 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92518415C0300D53D96 /* QTKit.framework */; };
+		F282F9F618416C8E00D53D96 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
+		F282F9F718416C8E00D53D96 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
+		F282F9F818416C8E00D53D96 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +64,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F282F8E718415B9E00D53D96;
 			remoteInfo = "AddLive OSX Tutorials";
+		};
+		F282F9D5184169CB00D53D96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F282F8E018415B9E00D53D96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F282F9B7184169CB00D53D96;
+			remoteInfo = Tutorial2;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,6 +100,17 @@
 		F282F99E1841667000D53D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Tutorial1/Base.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
 		F282F9A21841677C00D53D96 /* Tutorial1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Tutorial1.plist; path = Tutorial1/Tutorial1.plist; sourceTree = SOURCE_ROOT; };
 		F282F9A31841677C00D53D96 /* Tutorial1.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tutorial1.pch; path = Tutorial1/Tutorial1.pch; sourceTree = SOURCE_ROOT; };
+		F282F9B8184169CB00D53D96 /* Tutorial2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F282F9BC184169CB00D53D96 /* Tutorial2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial2-Info.plist"; sourceTree = "<group>"; };
+		F282F9BE184169CB00D53D96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F282F9C0184169CB00D53D96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F282F9C2184169CB00D53D96 /* Tutorial2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tutorial2-Prefix.pch"; sourceTree = "<group>"; };
+		F282F9C4184169CB00D53D96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F282F9C6184169CB00D53D96 /* ALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAppDelegate.h; sourceTree = "<group>"; };
+		F282F9C7184169CB00D53D96 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
+		F282F9CA184169CB00D53D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F282F9CC184169CB00D53D96 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F282F9D2184169CB00D53D96 /* Tutorial2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tutorial2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +142,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F282F9B5184169CB00D53D96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F282F9EF18416C8E00D53D96 /* AddLive.framework in Frameworks */,
+				F282F9F018416C8E00D53D96 /* OpenGL.framework in Frameworks */,
+				F282F9F118416C8E00D53D96 /* AudioToolbox.framework in Frameworks */,
+				F282F9F218416C8E00D53D96 /* IOKit.framework in Frameworks */,
+				F282F9F318416C8E00D53D96 /* QuartzCore.framework in Frameworks */,
+				F282F9F418416C8E00D53D96 /* ApplicationServices.framework in Frameworks */,
+				F282F9F518416C8E00D53D96 /* QTKit.framework in Frameworks */,
+				F282F9F618416C8E00D53D96 /* CoreServices.framework in Frameworks */,
+				F282F9F718416C8E00D53D96 /* CoreAudio.framework in Frameworks */,
+				F282F9F818416C8E00D53D96 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F282F9B9184169CB00D53D96 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F282F9CF184169CB00D53D96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F282F9E518416C7000D53D96 /* AddLive.framework in Frameworks */,
+				F282F9E618416C7000D53D96 /* OpenGL.framework in Frameworks */,
+				F282F9E718416C7000D53D96 /* AudioToolbox.framework in Frameworks */,
+				F282F9E818416C7000D53D96 /* IOKit.framework in Frameworks */,
+				F282F9E918416C7000D53D96 /* QuartzCore.framework in Frameworks */,
+				F282F9EA18416C7000D53D96 /* ApplicationServices.framework in Frameworks */,
+				F282F9EB18416C7000D53D96 /* QTKit.framework in Frameworks */,
+				F282F9EC18416C7000D53D96 /* CoreServices.framework in Frameworks */,
+				F282F9ED18416C7000D53D96 /* CoreAudio.framework in Frameworks */,
+				F282F9EE18416C7000D53D96 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F282F9D4184169CB00D53D96 /* Cocoa.framework in Frameworks */,
+				F282F9D3184169CB00D53D96 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				F282F8F118415B9E00D53D96 /* Tutorial1 */,
+				F282F9BA184169CB00D53D96 /* Tutorial2 */,
 				F282F8EA18415B9E00D53D96 /* Frameworks */,
 				F282F8E918415B9E00D53D96 /* Products */,
 			);
@@ -112,6 +197,8 @@
 			children = (
 				F282F8E818415B9E00D53D96 /* Tutorial1.app */,
 				F282F90918415B9E00D53D96 /* AddLive OSX TutorialsTests.xctest */,
+				F282F9B8184169CB00D53D96 /* Tutorial2.app */,
+				F282F9D2184169CB00D53D96 /* Tutorial2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +257,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F282F9BA184169CB00D53D96 /* Tutorial2 */ = {
+			isa = PBXGroup;
+			children = (
+				F282F9C6184169CB00D53D96 /* ALAppDelegate.h */,
+				F282F9C7184169CB00D53D96 /* ALAppDelegate.m */,
+				F282F9C9184169CB00D53D96 /* MainMenu.xib */,
+				F282F9CC184169CB00D53D96 /* Images.xcassets */,
+				F282F9BB184169CB00D53D96 /* Supporting Files */,
+			);
+			path = Tutorial2;
+			sourceTree = "<group>";
+		};
+		F282F9BB184169CB00D53D96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F282F9BC184169CB00D53D96 /* Tutorial2-Info.plist */,
+				F282F9BD184169CB00D53D96 /* InfoPlist.strings */,
+				F282F9C0184169CB00D53D96 /* main.m */,
+				F282F9C2184169CB00D53D96 /* Tutorial2-Prefix.pch */,
+				F282F9C3184169CB00D53D96 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +319,41 @@
 			productReference = F282F90918415B9E00D53D96 /* AddLive OSX TutorialsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F282F9B7184169CB00D53D96 /* Tutorial2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F282F9DF184169CC00D53D96 /* Build configuration list for PBXNativeTarget "Tutorial2" */;
+			buildPhases = (
+				F282F9B4184169CB00D53D96 /* Sources */,
+				F282F9B5184169CB00D53D96 /* Frameworks */,
+				F282F9B6184169CB00D53D96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tutorial2;
+			productName = Tutorial2;
+			productReference = F282F9B8184169CB00D53D96 /* Tutorial2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F282F9D1184169CB00D53D96 /* Tutorial2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F282F9E2184169CC00D53D96 /* Build configuration list for PBXNativeTarget "Tutorial2Tests" */;
+			buildPhases = (
+				F282F9CE184169CB00D53D96 /* Sources */,
+				F282F9CF184169CB00D53D96 /* Frameworks */,
+				F282F9D0184169CB00D53D96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F282F9D6184169CB00D53D96 /* PBXTargetDependency */,
+			);
+			name = Tutorial2Tests;
+			productName = Tutorial2Tests;
+			productReference = F282F9D2184169CB00D53D96 /* Tutorial2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,6 +365,9 @@
 				ORGANIZATIONNAME = AddLive;
 				TargetAttributes = {
 					F282F90818415B9E00D53D96 = {
+						TestTargetID = F282F8E718415B9E00D53D96;
+					};
+					F282F9D1184169CB00D53D96 = {
 						TestTargetID = F282F8E718415B9E00D53D96;
 					};
 				};
@@ -238,6 +387,8 @@
 			targets = (
 				F282F8E718415B9E00D53D96 /* Tutorial1 */,
 				F282F90818415B9E00D53D96 /* AddLive OSX TutorialsTests */,
+				F282F9B7184169CB00D53D96 /* Tutorial2 */,
+				F282F9D1184169CB00D53D96 /* Tutorial2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +405,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F282F90718415B9E00D53D96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F282F9B6184169CB00D53D96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F282F9BF184169CB00D53D96 /* InfoPlist.strings in Resources */,
+				F282F9CD184169CB00D53D96 /* Images.xcassets in Resources */,
+				F282F9C5184169CB00D53D96 /* Credits.rtf in Resources */,
+				F282F9CB184169CB00D53D96 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F282F9D0184169CB00D53D96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +448,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F282F9B4184169CB00D53D96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F282F9C1184169CB00D53D96 /* main.m in Sources */,
+				F282F9C8184169CB00D53D96 /* ALAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F282F9CE184169CB00D53D96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,6 +472,11 @@
 			target = F282F8E718415B9E00D53D96 /* Tutorial1 */;
 			targetProxy = F282F90D18415B9E00D53D96 /* PBXContainerItemProxy */;
 		};
+		F282F9D6184169CB00D53D96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F282F9B7184169CB00D53D96 /* Tutorial2 */;
+			targetProxy = F282F9D5184169CB00D53D96 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -294,6 +484,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				F282F99E1841667000D53D96 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F282F9BD184169CB00D53D96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F282F9BE184169CB00D53D96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F282F9C3184169CB00D53D96 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F282F9C4184169CB00D53D96 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F282F9C9184169CB00D53D96 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F282F9CA184169CB00D53D96 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -408,7 +622,7 @@
 		F282F91D18415B9E00D53D96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AddLive OSX Tutorials.app/Contents/MacOS/AddLive OSX Tutorials";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tutorial1.app/Contents/MacOS/Tutorial1";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -430,7 +644,7 @@
 		F282F91E18415B9E00D53D96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AddLive OSX Tutorials.app/Contents/MacOS/AddLive OSX Tutorials";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tutorial1.app/Contents/MacOS/Tutorial1";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -439,6 +653,86 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AddLive OSX Tutorials/AddLive OSX Tutorials-Prefix.pch";
 				INFOPLIST_FILE = "AddLive OSX TutorialsTests/AddLive OSX TutorialsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		F282F9E0184169CC00D53D96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial2/Tutorial2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tutorial2/Tutorial2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F282F9E1184169CC00D53D96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial2/Tutorial2-Prefix.pch";
+				INFOPLIST_FILE = "Tutorial2/Tutorial2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F282F9E3184169CC00D53D96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tutorial1.app/Contents/MacOS/Tutorial1";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial2/Tutorial2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tutorial2Tests/Tutorial2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F282F9E4184169CC00D53D96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tutorial1.app/Contents/MacOS/Tutorial1";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial2/Tutorial2-Prefix.pch";
+				INFOPLIST_FILE = "Tutorial2Tests/Tutorial2Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -470,6 +764,22 @@
 			buildConfigurations = (
 				F282F91D18415B9E00D53D96 /* Debug */,
 				F282F91E18415B9E00D53D96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F282F9DF184169CC00D53D96 /* Build configuration list for PBXNativeTarget "Tutorial2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F282F9E0184169CC00D53D96 /* Debug */,
+				F282F9E1184169CC00D53D96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F282F9E2184169CC00D53D96 /* Build configuration list for PBXNativeTarget "Tutorial2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F282F9E3184169CC00D53D96 /* Debug */,
+				F282F9E4184169CC00D53D96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
