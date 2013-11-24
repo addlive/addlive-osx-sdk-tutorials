@@ -26,6 +26,14 @@ The sample application provides a brief overview of how the AddLive platform
 displays video feed. In the tutorial, there is a single renderer employed
 and a widget allowing one to change the camera settings.
 
+## Tutorial 4 - Basic connectivity
+
+This example cover the core of the AddLive functionality - connectivity to the
+media scope.
+
+The example applicaiton provides a functionality of a one-to-one video
+chat room.
+
 ## License
 
 All code examples provided within this repository are available under the
