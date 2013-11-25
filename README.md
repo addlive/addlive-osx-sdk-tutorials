@@ -43,6 +43,15 @@ This tutorial covers more advanced handling of the media devices:
 - rendering speech level
 - testing the speakers
 
+## Tutorial 6 - Advanced connectivity
+
+This tutorial covers more advanced handling of the connectivity
+
+- an ability to control which media are published
+- handling of remote peer publish/unpublish events
+- display of the connection type
+- connection lost and reconnected handling
+- an ability to specify custom scope
 
 ## License
 

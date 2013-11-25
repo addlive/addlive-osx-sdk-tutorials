@@ -24,8 +24,6 @@
 
 + (NSString*) API_KEY;
 
-+ (NSString*) SCOPE_ID;
-
 @end
 
 @interface ALEventsListener : NSObject<ALServiceListener>
@@ -40,10 +38,13 @@
 
 
 @implementation ALAppDelegate {
-    ALService* _alService;
-    NSMutableArray* _mics;
-    NSMutableArray* _spkrs;
-    NSMutableArray* _cams;
+    ALService*        _alService;
+    NSMutableArray*   _mics;
+    NSMutableArray*   _spkrs;
+    NSMutableArray*   _cams;
+    BOOL              _isConnected;
+    NSString*         _scopeId;
+    
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -66,9 +67,10 @@
 
 - (IBAction) connect:(id)sender {
     ALConnectionDescriptor* descr = [[ALConnectionDescriptor alloc] init];
-    descr.scopeId = Consts.SCOPE_ID;
-    descr.autopublishAudio = YES;
-    descr.autopublishVideo = YES;
+
+    descr.scopeId = _scopeIdTxtField.stringValue;
+    descr.autopublishAudio = !!_publishAudioChckBx.integerValue;
+    descr.autopublishVideo = !!_publishVideoChckBx.integerValue;
     descr.videoStream.maxFps = 15;
     descr.videoStream.maxWidth = 480;
     descr.videoStream.maxHeight = 640;
@@ -78,6 +80,11 @@
     ResultBlock onConnect = ^(ALError* err, id nothing) {
         if([self handleErrMaybe:err where:@"connect"])
             return;
+        _isConnected = YES;
+        // Store the scope id so the disconnect and publish/unpublish methods operate propertly
+        _scopeId = descr.scopeId;
+        _disconnectBtn.hidden = NO;
+        _connectBtn.hidden = YES;
         _stateLabel.textColor = GREEN;
         [_stateLabel setStringValue:@"Connected."];
     };
@@ -88,7 +95,14 @@
 }
 
 - (IBAction) disconnect:(id)sender {
-    
+    ResultBlock onDisconnected = ^(ALError* err, id nothing) {
+        [self onDisconnected];
+        _disconnectBtn.hidden = YES;
+        _connectBtn.hidden = NO;
+        _stateLabel.textColor = BLACK;
+        [_stateLabel setStringValue:@"Disconnected."];
+    };
+    [_alService disconnect:_scopeId responder:[ALResponder responderWithBlock:onDisconnected]];
 }
 
 
@@ -135,9 +149,28 @@
     _stateLabel.textColor = BLACK;
     
     [_stateLabel setStringValue:
-     [NSString stringWithFormat:@"Changing mic to: %@", dev.label]];
+    [NSString stringWithFormat:@"Changing mic to: %@", dev.label]];
     [_alService setAudioCaptureDevice:dev.id
                            responder:[ALResponder responderWithBlock:onMic]];
+}
+
+- (IBAction) publishAudioChanged:(id)sender {
+    if(!_isConnected)
+        return;
+    if(_publishAudioChckBx.intValue)
+        [_alService publish:_scopeId what:ALMediaType.kAudio options:nil responder:nil];
+    else
+        [_alService unpublish:_scopeId what:ALMediaType.kAudio responder:nil];
+    
+}
+
+- (IBAction) publishVideoChanged:(id)sender {
+    if(!_isConnected)
+        return;
+    if(_publishVideoChckBx.intValue)
+        [_alService publish:_scopeId what:ALMediaType.kVideo options:nil responder:nil];
+    else
+        [_alService unpublish:_scopeId what:ALMediaType.kVideo responder:nil];
 }
 
 
@@ -226,44 +259,73 @@
     return YES;
 }
 
-@end
-
-@implementation ALEventsListener {
-    ALVideoView* _renderer;
-    NSTextField* _label;
-    ALService* _service;
+- (void) onDisconnected {
+    _isConnected = NO;
+    [_remoteVideo stop:nil];
+    _remoteVideo.hidden = YES;
+    _connTypeLbl.stringValue = @"Not Connected";
+    _remoteUserIdLbl.stringValue = @"None";
+    _disconnectBtn.hidden = YES;
+    _connectBtn.hidden = NO;
 }
 
-- (id) initWithRenderer:(ALVideoView*) renderer withUserLabel:(NSTextField*) userLabel withService:(ALService*) service {
-    self = [super init];
-    if(self) {
-        _renderer = renderer;
-        _label = userLabel;
-        _service = service;
-    }
-    return self;
+
+/// ALServiceListener methods
+
+- (void) onMediaConnTypeChanged:(ALMediaConnTypeChangedEvent*) event {
+    _connTypeLbl.stringValue = event.connectionType;
 }
 
 - (void) onUserEvent:(ALUserStateChangedEvent*) event {
     NSLog(@"Got remote user event: %@", event);
     if(event.isConnected) {
         NSLog(@"Got new user");
-        [_label setStringValue:[NSString stringWithFormat:@"%lld", event.userId]];
+        [_remoteUserIdLbl setStringValue:[NSString stringWithFormat:@"%lld", event.userId]];
         if(event.videoPublished) {
-            ResultBlock onStopped = ^(ALError* err, id nothing) {
-                [_renderer setupWithService:_service withSink:event.videoSinkId];
-                [_renderer start:nil];
-                _renderer.hidden = NO;
-            };
-            [_renderer stop:[ALResponder responderWithBlock:onStopped]];
+            [self renderRemoteSink:event.videoSinkId];
         }
     } else {
-        _renderer.hidden = YES;
-        [_label setStringValue:@"None"];
+        _remoteVideo.hidden = YES;
+        [_remoteUserIdLbl setStringValue:@"None"];
     }
+    _noAudioLbl.hidden = event.audioPublished;
+    _noVideoLabel.hidden = event.videoPublished;
+}
+
+- (void) onMediaStreamEvent:(ALUserStateChangedEvent*) event {
+    NSLog(@"Got media stream event");
+    if([event.mediaType isEqualToString:ALMediaType.kVideo]) {
+        _noVideoLabel.hidden = event.videoPublished;
+        if(event.videoPublished) {
+            [self renderRemoteSink:event.videoSinkId];
+        } else {
+            [_remoteVideo stop:nil];
+            _remoteVideo.hidden = YES;
+        }
+    } else {
+        _noAudioLbl.hidden = event.audioPublished;
+    }
+    
+}
+
+- (void) onConnectionLost:(ALConnectionLostEvent*) event {
+    _stateLabel.textColor = RED;
+    _stateLabel.stringValue = @"Connection lost.";
+    [self onDisconnected];
+}
+
+
+- (void) renderRemoteSink:(NSString*) sinkId {
+    ResultBlock onStopped = ^(ALError* err, id nothing) {
+        [_remoteVideo setupWithService:_alService withSink:sinkId];
+        [_remoteVideo start:nil];
+        _remoteVideo.hidden = NO;
+    };
+    [_remoteVideo stop:[ALResponder responderWithBlock:onStopped]];
 }
 
 @end
+
 
 
 @implementation Consts
@@ -276,10 +338,6 @@
 + (NSString*) API_KEY {
     // TODO update this to use some real value
     return @"";
-}
-
-+ (NSString*) SCOPE_ID {
-    return @"OSX_Test";
 }
 
 

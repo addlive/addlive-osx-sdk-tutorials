@@ -118,8 +118,6 @@
     [_micLevelIndicator setMinValue:0.0];
     [_micLevelIndicator setMaxValue:255.0];
     [_micLevelIndicator setIntValue:125];
-    [_micLevelIndicator setNumberOfMajorTickMarks:10];
-    [_micLevelIndicator setNumberOfTickMarks:100];
     
     [_micActivityChckBox setIntValue:0];
 }
@@ -234,6 +232,6 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"SomeApiKey";
+    return @"";
 }
 @end
