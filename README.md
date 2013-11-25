@@ -52,6 +52,8 @@ This tutorial covers more advanced handling of the connectivity
 - display of the connection type
 - connection lost and reconnected handling
 - an ability to specify custom scope
+- an ability to reconfigure the uplink video stream on the fly
+
 
 ## License
 
