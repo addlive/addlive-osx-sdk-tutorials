@@ -44,6 +44,7 @@
     NSMutableArray*   _cams;
     BOOL              _isConnected;
     NSString*         _scopeId;
+    NSArray*          _videoQualityProfiles;
     
 }
 
@@ -53,7 +54,10 @@
     _mics = [[NSMutableArray alloc] init];
     _spkrs = [[NSMutableArray alloc] init];
     _cams = [[NSMutableArray alloc] init];
+    [self initQualityProfiles];
+    
     _alService = [[ALService alloc] init];
+    
     ALInitOptions* options = [[ALInitOptions alloc] init];
     options.apiKey = Consts.API_KEY;
     options.applicationId = Consts.APP_ID;
@@ -64,16 +68,35 @@
 
 }
 
+- (void) initQualityProfiles {
+    ALVideoStreamDescriptor* lowQ = [[ALVideoStreamDescriptor alloc] init];
+    lowQ.maxWidth = 160;
+    lowQ.maxHeight = 120;
+    lowQ.maxFps = 5;
+    
+    ALVideoStreamDescriptor* medQ = [[ALVideoStreamDescriptor alloc] init];
+    medQ.maxWidth = 320;
+    medQ.maxHeight = 240;
+    medQ.maxFps = 10;
+
+    ALVideoStreamDescriptor* highQ = [[ALVideoStreamDescriptor alloc] init];
+    highQ.maxWidth = 640;
+    highQ.maxHeight = 480;
+    highQ.maxFps = 24;
+    _videoQualityProfiles = @[lowQ,medQ,highQ];
+}
 
 - (IBAction) connect:(id)sender {
     ALConnectionDescriptor* descr = [[ALConnectionDescriptor alloc] init];
 
     descr.scopeId = _scopeIdTxtField.stringValue;
+    // TODO remove me
+    descr.url = [NSString stringWithFormat:@"127.0.0.1:7000/%@", descr.scopeId];
     descr.autopublishAudio = !!_publishAudioChckBx.integerValue;
     descr.autopublishVideo = !!_publishVideoChckBx.integerValue;
-    descr.videoStream.maxFps = 15;
-    descr.videoStream.maxWidth = 480;
-    descr.videoStream.maxHeight = 640;
+    NSUInteger qualityIndex = _qualitySlider.integerValue;
+    NSLog(@"Will use quality index value: %lu", (unsigned long)qualityIndex);
+    descr.videoStream = [_videoQualityProfiles objectAtIndex:qualityIndex];
     descr.authDetails.userId = rand() % 10000;
     descr.authDetails.salt = @"some super random string";
     descr.authDetails.expires = time(0) + 60 * 60;
@@ -173,6 +196,22 @@
         [_alService unpublish:_scopeId what:ALMediaType.kVideo responder:nil];
 }
 
+- (IBAction) changeQuality:(id)sender {
+    if(!_isConnected)
+        return;
+    NSUInteger qualityIndex = _qualitySlider.integerValue;
+    ALVideoStreamDescriptor* videoStream = [_videoQualityProfiles objectAtIndex:qualityIndex];
+
+    ResultBlock onReconfigure = ^(ALError* err, id nothing) {
+        if([self handleErrMaybe:err where:@"reconfigureVideo"])
+            return;
+        _stateLabel.textColor = GREEN;
+        _stateLabel.stringValue = @"Video configuration changed";
+    };
+    [_alService reconfigureVideo:_scopeId
+                     videoStream:videoStream
+                       responder:[ALResponder responderWithBlock:onReconfigure]];
+}
 
 
 - (void) onPlatformReady:(ALError*) error {
@@ -337,7 +376,7 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"";
+    return @"AddLiveSuperSecret";
 }
 
 

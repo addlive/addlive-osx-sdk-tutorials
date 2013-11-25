@@ -123,9 +123,6 @@
 		F278DE641842D5D900FAE456 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
 		F278DE671842D5D900FAE456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F278DE691842D5D900FAE456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F278DE761842D5D900FAE456 /* Tutorial5Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial5Tests-Info.plist"; sourceTree = "<group>"; };
-		F278DE781842D5D900FAE456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F278DE7A1842D5D900FAE456 /* Tutorial5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tutorial5Tests.m; sourceTree = "<group>"; };
 		F278DE8C1842E2E300FAE456 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = test.wav; path = ../../../../adl/sources/saymamaplugin/test.wav; sourceTree = "<group>"; };
 		F278DE921843AA8500FAE456 /* Tutorial6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F278DE961843AA8500FAE456 /* Tutorial6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial6-Info.plist"; sourceTree = "<group>"; };
@@ -331,24 +328,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F278DE741842D5D900FAE456 /* Tutorial5Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F278DE7A1842D5D900FAE456 /* Tutorial5Tests.m */,
-				F278DE751842D5D900FAE456 /* Supporting Files */,
-			);
-			path = Tutorial5Tests;
-			sourceTree = "<group>";
-		};
-		F278DE751842D5D900FAE456 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F278DE761842D5D900FAE456 /* Tutorial5Tests-Info.plist */,
-				F278DE771842D5D900FAE456 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		F278DE941843AA8500FAE456 /* Tutorial6 */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,7 +360,6 @@
 				F282F9FF18417AD400D53D96 /* Tutorial3 */,
 				F282FA3A1841806200D53D96 /* Tutorial4 */,
 				F278DE571842D5D900FAE456 /* Tutorial5 */,
-				F278DE741842D5D900FAE456 /* Tutorial5Tests */,
 				F278DE941843AA8500FAE456 /* Tutorial6 */,
 				F282F8EA18415B9E00D53D96 /* Frameworks */,
 				F282F8E918415B9E00D53D96 /* Products */,
@@ -814,14 +792,6 @@
 				F278DE671842D5D900FAE456 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		F278DE771842D5D900FAE456 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F278DE781842D5D900FAE456 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		F278DE971843AA8500FAE456 /* InfoPlist.strings */ = {

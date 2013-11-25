@@ -28,6 +28,7 @@
 @property (weak) IBOutlet NSButton *publishVideoChckBx;
 @property (weak) IBOutlet NSTextField *noAudioLbl;
 @property (weak) IBOutlet NSTextField *noVideoLabel;
+@property (weak) IBOutlet NSSlider *qualitySlider;
 
 - (IBAction) camChanged:(id)sender;
 - (IBAction) micChanged:(id)sender;
@@ -35,6 +36,7 @@
 
 - (IBAction) publishAudioChanged:(id)sender;
 - (IBAction) publishVideoChanged:(id)sender;
+- (IBAction) changeQuality:(id)sender;
 
 - (IBAction) connect:(id)sender;
 - (IBAction) disconnect:(id)sender;
