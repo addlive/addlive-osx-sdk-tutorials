@@ -34,6 +34,16 @@ media scope.
 The example applicaiton provides a functionality of a one-to-one video
 chat room.
 
+## Tutorial 5 - Advanced devices handling
+
+This tutorial covers more advanced handling of the media devices:
+
+- getting the details about host CPU
+- handling device list changed events
+- rendering speech level
+- testing the speakers
+
+
 ## License
 
 All code examples provided within this repository are available under the
