@@ -54,6 +54,7 @@ This tutorial covers more advanced handling of the connectivity
 - an ability to specify custom scope
 - an ability to reconfigure the uplink video stream on the fly
 
+## Tutorial 7 - Screen sharing
 
 ## License
 
