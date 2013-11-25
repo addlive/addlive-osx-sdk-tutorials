@@ -42,6 +42,23 @@
 		F278DEC61843AAC700FAE456 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
 		F278DEC71843AAC700FAE456 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
 		F278DEC81843AAC700FAE456 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
+		F278DECE1843DCA300FAE456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92218415C0300D53D96 /* Cocoa.framework */; };
+		F278DED41843DCA300FAE456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F278DED21843DCA300FAE456 /* InfoPlist.strings */; };
+		F278DED61843DCA300FAE456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DED51843DCA300FAE456 /* main.m */; };
+		F278DEDA1843DCA300FAE456 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F278DED81843DCA300FAE456 /* Credits.rtf */; };
+		F278DEDD1843DCA300FAE456 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DEDC1843DCA300FAE456 /* ALAppDelegate.m */; };
+		F278DEE01843DCA300FAE456 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278DEDE1843DCA300FAE456 /* MainMenu.xib */; };
+		F278DEE21843DCA300FAE456 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278DEE11843DCA300FAE456 /* Images.xcassets */; };
+		F278DEFA1843DCB900FAE456 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
+		F278DEFB1843DCB900FAE456 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
+		F278DEFC1843DCB900FAE456 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
+		F278DEFD1843DCB900FAE456 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
+		F278DEFE1843DCB900FAE456 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92318415C0300D53D96 /* QuartzCore.framework */; };
+		F278DEFF1843DCB900FAE456 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92418415C0300D53D96 /* ApplicationServices.framework */; };
+		F278DF001843DCB900FAE456 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92518415C0300D53D96 /* QTKit.framework */; };
+		F278DF011843DCB900FAE456 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
+		F278DF021843DCB900FAE456 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
+		F278DF031843DCB900FAE456 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
 		F282F8EC18415B9E00D53D96 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F8EB18415B9E00D53D96 /* Cocoa.framework */; };
 		F282F92A18415C0300D53D96 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F282F92B18415C0300D53D96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
@@ -134,6 +151,16 @@
 		F278DEA11843AA8500FAE456 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
 		F278DEA41843AA8500FAE456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F278DEA61843AA8500FAE456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F278DECD1843DCA300FAE456 /* Tutorial7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F278DED11843DCA300FAE456 /* Tutorial7-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial7-Info.plist"; sourceTree = "<group>"; };
+		F278DED31843DCA300FAE456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F278DED51843DCA300FAE456 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F278DED71843DCA300FAE456 /* Tutorial7-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tutorial7-Prefix.pch"; sourceTree = "<group>"; };
+		F278DED91843DCA300FAE456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F278DEDB1843DCA300FAE456 /* ALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAppDelegate.h; sourceTree = "<group>"; };
+		F278DEDC1843DCA300FAE456 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
+		F278DEDF1843DCA300FAE456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F278DEE11843DCA300FAE456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F282F8E818415B9E00D53D96 /* Tutorial1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F282F8EB18415B9E00D53D96 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F282F8EE18415B9E00D53D96 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -224,6 +251,24 @@
 				F278DEC71843AAC700FAE456 /* CoreAudio.framework in Frameworks */,
 				F278DEC81843AAC700FAE456 /* libstdc++.6.0.9.dylib in Frameworks */,
 				F278DE931843AA8500FAE456 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F278DECA1843DCA300FAE456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F278DEFA1843DCB900FAE456 /* AddLive.framework in Frameworks */,
+				F278DEFB1843DCB900FAE456 /* OpenGL.framework in Frameworks */,
+				F278DEFC1843DCB900FAE456 /* AudioToolbox.framework in Frameworks */,
+				F278DEFD1843DCB900FAE456 /* IOKit.framework in Frameworks */,
+				F278DEFE1843DCB900FAE456 /* QuartzCore.framework in Frameworks */,
+				F278DEFF1843DCB900FAE456 /* ApplicationServices.framework in Frameworks */,
+				F278DF001843DCB900FAE456 /* QTKit.framework in Frameworks */,
+				F278DF011843DCB900FAE456 /* CoreServices.framework in Frameworks */,
+				F278DF021843DCB900FAE456 /* CoreAudio.framework in Frameworks */,
+				F278DF031843DCB900FAE456 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F278DECE1843DCA300FAE456 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +397,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F278DECF1843DCA300FAE456 /* Tutorial7 */ = {
+			isa = PBXGroup;
+			children = (
+				F278DEDB1843DCA300FAE456 /* ALAppDelegate.h */,
+				F278DEDC1843DCA300FAE456 /* ALAppDelegate.m */,
+				F278DEDE1843DCA300FAE456 /* MainMenu.xib */,
+				F278DEE11843DCA300FAE456 /* Images.xcassets */,
+				F278DED01843DCA300FAE456 /* Supporting Files */,
+			);
+			path = Tutorial7;
+			sourceTree = "<group>";
+		};
+		F278DED01843DCA300FAE456 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F278DED11843DCA300FAE456 /* Tutorial7-Info.plist */,
+				F278DED21843DCA300FAE456 /* InfoPlist.strings */,
+				F278DED51843DCA300FAE456 /* main.m */,
+				F278DED71843DCA300FAE456 /* Tutorial7-Prefix.pch */,
+				F278DED81843DCA300FAE456 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F282F8DF18415B9E00D53D96 = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +430,7 @@
 				F282FA3A1841806200D53D96 /* Tutorial4 */,
 				F278DE571842D5D900FAE456 /* Tutorial5 */,
 				F278DE941843AA8500FAE456 /* Tutorial6 */,
+				F278DECF1843DCA300FAE456 /* Tutorial7 */,
 				F282F8EA18415B9E00D53D96 /* Frameworks */,
 				F282F8E918415B9E00D53D96 /* Products */,
 			);
@@ -375,6 +445,7 @@
 				F282FA381841806200D53D96 /* Tutorial4.app */,
 				F278DE551842D5D800FAE456 /* Tutorial5.app */,
 				F278DE921843AA8500FAE456 /* Tutorial6.app */,
+				F278DECD1843DCA300FAE456 /* Tutorial7.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -542,6 +613,23 @@
 			productReference = F278DE921843AA8500FAE456 /* Tutorial6.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F278DECC1843DCA300FAE456 /* Tutorial7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F278DEF41843DCA400FAE456 /* Build configuration list for PBXNativeTarget "Tutorial7" */;
+			buildPhases = (
+				F278DEC91843DCA300FAE456 /* Sources */,
+				F278DECA1843DCA300FAE456 /* Frameworks */,
+				F278DECB1843DCA300FAE456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tutorial7;
+			productName = Tutorial7;
+			productReference = F278DECD1843DCA300FAE456 /* Tutorial7.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F282F8E718415B9E00D53D96 /* Tutorial1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F282F91918415B9E00D53D96 /* Build configuration list for PBXNativeTarget "Tutorial1" */;
@@ -639,6 +727,7 @@
 				F282FA371841806200D53D96 /* Tutorial4 */,
 				F278DE541842D5D800FAE456 /* Tutorial5 */,
 				F278DE911843AA8500FAE456 /* Tutorial6 */,
+				F278DECC1843DCA300FAE456 /* Tutorial7 */,
 			);
 		};
 /* End PBXProject section */
@@ -664,6 +753,17 @@
 				F278DEA71843AA8500FAE456 /* Images.xcassets in Resources */,
 				F278DE9F1843AA8500FAE456 /* Credits.rtf in Resources */,
 				F278DEA51843AA8500FAE456 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F278DECB1843DCA300FAE456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F278DED41843DCA300FAE456 /* InfoPlist.strings in Resources */,
+				F278DEE21843DCA300FAE456 /* Images.xcassets in Resources */,
+				F278DEDA1843DCA300FAE456 /* Credits.rtf in Resources */,
+				F278DEE01843DCA300FAE456 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +828,15 @@
 			files = (
 				F278DE9B1843AA8500FAE456 /* main.m in Sources */,
 				F278DEA21843AA8500FAE456 /* ALAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F278DEC91843DCA300FAE456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F278DED61843DCA300FAE456 /* main.m in Sources */,
+				F278DEDD1843DCA300FAE456 /* ALAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,6 +923,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				F278DEA41843AA8500FAE456 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F278DED21843DCA300FAE456 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F278DED31843DCA300FAE456 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F278DED81843DCA300FAE456 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F278DED91843DCA300FAE456 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F278DEDE1843DCA300FAE456 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F278DEDF1843DCA300FAE456 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -972,6 +1105,44 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial6/Tutorial6-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial6/Tutorial6-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F278DEF51843DCA400FAE456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial7/Tutorial7-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tutorial7/Tutorial7-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F278DEF61843DCA400FAE456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial7/Tutorial7-Prefix.pch";
+				INFOPLIST_FILE = "Tutorial7/Tutorial7-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1211,6 +1382,14 @@
 			buildConfigurations = (
 				F278DEBA1843AA8500FAE456 /* Debug */,
 				F278DEBB1843AA8500FAE456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F278DEF41843DCA400FAE456 /* Build configuration list for PBXNativeTarget "Tutorial7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F278DEF51843DCA400FAE456 /* Debug */,
+				F278DEF61843DCA400FAE456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
