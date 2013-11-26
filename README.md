@@ -56,6 +56,9 @@ This tutorial covers more advanced handling of the connectivity
 
 ## Tutorial 7 - Screen sharing
 
+## Tutorial 8 - Text chat
+
+
 ## License
 
 All code examples provided within this repository are available under the
