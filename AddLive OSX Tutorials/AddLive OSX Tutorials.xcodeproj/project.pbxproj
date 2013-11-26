@@ -59,6 +59,23 @@
 		F278DF011843DCB900FAE456 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
 		F278DF021843DCB900FAE456 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
 		F278DF031843DCB900FAE456 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
+		F278DF091844157300FAE456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92218415C0300D53D96 /* Cocoa.framework */; };
+		F278DF0F1844157300FAE456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F278DF0D1844157300FAE456 /* InfoPlist.strings */; };
+		F278DF111844157300FAE456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DF101844157300FAE456 /* main.m */; };
+		F278DF151844157300FAE456 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F278DF131844157300FAE456 /* Credits.rtf */; };
+		F278DF181844157300FAE456 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DF171844157300FAE456 /* ALAppDelegate.m */; };
+		F278DF1B1844157300FAE456 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278DF191844157300FAE456 /* MainMenu.xib */; };
+		F278DF1D1844157300FAE456 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278DF1C1844157300FAE456 /* Images.xcassets */; };
+		F278DF351844158B00FAE456 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
+		F278DF361844158B00FAE456 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
+		F278DF371844158B00FAE456 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
+		F278DF381844158B00FAE456 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
+		F278DF391844158B00FAE456 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92318415C0300D53D96 /* QuartzCore.framework */; };
+		F278DF3A1844158B00FAE456 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92418415C0300D53D96 /* ApplicationServices.framework */; };
+		F278DF3B1844158B00FAE456 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92518415C0300D53D96 /* QTKit.framework */; };
+		F278DF3C1844158B00FAE456 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
+		F278DF3D1844158B00FAE456 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
+		F278DF3E1844158B00FAE456 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
 		F282F8EC18415B9E00D53D96 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F8EB18415B9E00D53D96 /* Cocoa.framework */; };
 		F282F92A18415C0300D53D96 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F282F92B18415C0300D53D96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
@@ -161,6 +178,16 @@
 		F278DEDC1843DCA300FAE456 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
 		F278DEDF1843DCA300FAE456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F278DEE11843DCA300FAE456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F278DF081844157300FAE456 /* Tutorial8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F278DF0C1844157300FAE456 /* Tutorial8-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial8-Info.plist"; sourceTree = "<group>"; };
+		F278DF0E1844157300FAE456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F278DF101844157300FAE456 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F278DF121844157300FAE456 /* Tutorial8-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tutorial8-Prefix.pch"; sourceTree = "<group>"; };
+		F278DF141844157300FAE456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F278DF161844157300FAE456 /* ALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAppDelegate.h; sourceTree = "<group>"; };
+		F278DF171844157300FAE456 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
+		F278DF1A1844157300FAE456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F278DF1C1844157300FAE456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F282F8E818415B9E00D53D96 /* Tutorial1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F282F8EB18415B9E00D53D96 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F282F8EE18415B9E00D53D96 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -269,6 +296,24 @@
 				F278DF021843DCB900FAE456 /* CoreAudio.framework in Frameworks */,
 				F278DF031843DCB900FAE456 /* libstdc++.6.0.9.dylib in Frameworks */,
 				F278DECE1843DCA300FAE456 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F278DF051844157300FAE456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F278DF351844158B00FAE456 /* AddLive.framework in Frameworks */,
+				F278DF361844158B00FAE456 /* OpenGL.framework in Frameworks */,
+				F278DF371844158B00FAE456 /* AudioToolbox.framework in Frameworks */,
+				F278DF381844158B00FAE456 /* IOKit.framework in Frameworks */,
+				F278DF391844158B00FAE456 /* QuartzCore.framework in Frameworks */,
+				F278DF3A1844158B00FAE456 /* ApplicationServices.framework in Frameworks */,
+				F278DF3B1844158B00FAE456 /* QTKit.framework in Frameworks */,
+				F278DF3C1844158B00FAE456 /* CoreServices.framework in Frameworks */,
+				F278DF3D1844158B00FAE456 /* CoreAudio.framework in Frameworks */,
+				F278DF3E1844158B00FAE456 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F278DF091844157300FAE456 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +466,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F278DF0A1844157300FAE456 /* Tutorial8 */ = {
+			isa = PBXGroup;
+			children = (
+				F278DF161844157300FAE456 /* ALAppDelegate.h */,
+				F278DF171844157300FAE456 /* ALAppDelegate.m */,
+				F278DF191844157300FAE456 /* MainMenu.xib */,
+				F278DF1C1844157300FAE456 /* Images.xcassets */,
+				F278DF0B1844157300FAE456 /* Supporting Files */,
+			);
+			path = Tutorial8;
+			sourceTree = "<group>";
+		};
+		F278DF0B1844157300FAE456 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F278DF0C1844157300FAE456 /* Tutorial8-Info.plist */,
+				F278DF0D1844157300FAE456 /* InfoPlist.strings */,
+				F278DF101844157300FAE456 /* main.m */,
+				F278DF121844157300FAE456 /* Tutorial8-Prefix.pch */,
+				F278DF131844157300FAE456 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F282F8DF18415B9E00D53D96 = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +500,7 @@
 				F278DE571842D5D900FAE456 /* Tutorial5 */,
 				F278DE941843AA8500FAE456 /* Tutorial6 */,
 				F278DECF1843DCA300FAE456 /* Tutorial7 */,
+				F278DF0A1844157300FAE456 /* Tutorial8 */,
 				F282F8EA18415B9E00D53D96 /* Frameworks */,
 				F282F8E918415B9E00D53D96 /* Products */,
 			);
@@ -446,6 +516,7 @@
 				F278DE551842D5D800FAE456 /* Tutorial5.app */,
 				F278DE921843AA8500FAE456 /* Tutorial6.app */,
 				F278DECD1843DCA300FAE456 /* Tutorial7.app */,
+				F278DF081844157300FAE456 /* Tutorial8.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -630,6 +701,23 @@
 			productReference = F278DECD1843DCA300FAE456 /* Tutorial7.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F278DF071844157300FAE456 /* Tutorial8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F278DF2F1844157300FAE456 /* Build configuration list for PBXNativeTarget "Tutorial8" */;
+			buildPhases = (
+				F278DF041844157300FAE456 /* Sources */,
+				F278DF051844157300FAE456 /* Frameworks */,
+				F278DF061844157300FAE456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tutorial8;
+			productName = Tutorial8;
+			productReference = F278DF081844157300FAE456 /* Tutorial8.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F282F8E718415B9E00D53D96 /* Tutorial1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F282F91918415B9E00D53D96 /* Build configuration list for PBXNativeTarget "Tutorial1" */;
@@ -728,6 +816,7 @@
 				F278DE541842D5D800FAE456 /* Tutorial5 */,
 				F278DE911843AA8500FAE456 /* Tutorial6 */,
 				F278DECC1843DCA300FAE456 /* Tutorial7 */,
+				F278DF071844157300FAE456 /* Tutorial8 */,
 			);
 		};
 /* End PBXProject section */
@@ -764,6 +853,17 @@
 				F278DEE21843DCA300FAE456 /* Images.xcassets in Resources */,
 				F278DEDA1843DCA300FAE456 /* Credits.rtf in Resources */,
 				F278DEE01843DCA300FAE456 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F278DF061844157300FAE456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F278DF0F1844157300FAE456 /* InfoPlist.strings in Resources */,
+				F278DF1D1844157300FAE456 /* Images.xcassets in Resources */,
+				F278DF151844157300FAE456 /* Credits.rtf in Resources */,
+				F278DF1B1844157300FAE456 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,6 +937,15 @@
 			files = (
 				F278DED61843DCA300FAE456 /* main.m in Sources */,
 				F278DEDD1843DCA300FAE456 /* ALAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F278DF041844157300FAE456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F278DF111844157300FAE456 /* main.m in Sources */,
+				F278DF181844157300FAE456 /* ALAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,6 +1056,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				F278DEDF1843DCA300FAE456 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F278DF0D1844157300FAE456 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F278DF0E1844157300FAE456 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F278DF131844157300FAE456 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F278DF141844157300FAE456 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F278DF191844157300FAE456 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F278DF1A1844157300FAE456 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1143,6 +1276,44 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial7/Tutorial7-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial7/Tutorial7-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F278DF301844157300FAE456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial8/Tutorial8-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tutorial8/Tutorial8-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F278DF311844157300FAE456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial8/Tutorial8-Prefix.pch";
+				INFOPLIST_FILE = "Tutorial8/Tutorial8-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1390,6 +1561,14 @@
 			buildConfigurations = (
 				F278DEF51843DCA400FAE456 /* Debug */,
 				F278DEF61843DCA400FAE456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F278DF2F1844157300FAE456 /* Build configuration list for PBXNativeTarget "Tutorial8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F278DF301844157300FAE456 /* Debug */,
+				F278DF311844157300FAE456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

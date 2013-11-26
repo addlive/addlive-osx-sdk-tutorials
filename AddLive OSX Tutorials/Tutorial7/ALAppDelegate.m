@@ -32,7 +32,8 @@
 
 - (id) initWithRenderer:(ALVideoView*) renderer
           withUserLabel:(NSTextField*) userLabel
-            withService:(ALService*) service;
+            withService:(ALService*) service
+        withStatusLabel:(NSTextField*) statusLabel ;
 
 - (void) onUserEvent:(ALUserStateChangedEvent*) event;
 
@@ -65,6 +66,8 @@
 - (IBAction) connect:(id)sender {
     ALConnectionDescriptor* descr = [[ALConnectionDescriptor alloc] init];
     descr.scopeId = Consts.SCOPE_ID;
+    
+    descr.url = [NSString stringWithFormat:@"127.0.0.1:7000/%@", descr.scopeId];
     
     descr.autopublishAudio = NO;
     descr.autopublishVideo = NO;
@@ -146,7 +149,9 @@
     _listener = [[ALEventsListener alloc]
                  initWithRenderer:_remoteVideo
                  withUserLabel:_remoteUserIdLbl
-                 withService:_alService];
+                 withService:_alService
+                 withStatusLabel:_stateLabel
+                 ];
     ResultBlock onListener = ^(ALError* err, id nothing) {
         [self showVersion];
         [self fetchScreenSharingSources];
@@ -196,15 +201,20 @@
 @implementation ALEventsListener {
     ALVideoView* _renderer;
     NSTextField* _label;
-    ALService* _service;
+    NSTextField* _statusLbl;
+    ALService*   _service;
 }
 
-- (id) initWithRenderer:(ALVideoView*) renderer withUserLabel:(NSTextField*) userLabel withService:(ALService*) service {
+- (id) initWithRenderer:(ALVideoView*) renderer
+          withUserLabel:(NSTextField*) userLabel
+            withService:(ALService*) service
+        withStatusLabel:(NSTextField*) statusLabel {
     self = [super init];
     if(self) {
         _renderer = renderer;
         _label = userLabel;
         _service = service;
+        _statusLbl = statusLabel;
     }
     return self;
 }
@@ -243,6 +253,20 @@
     
 }
 
+- (void) onMediaStreamFailure:(ALMediaStreamFailureEvent*) event {
+    if(![event.mediaType isEqualToString:ALMediaType.kScreen]) {
+        return;
+    }
+    if(event.errCode == kMediaSharedWindowClosed) {
+        _statusLbl.textColor = RED;
+        _statusLbl.stringValue = @"The shared window was closed. Select other one.";
+    } else {
+        _statusLbl.textColor = RED;
+        _statusLbl.stringValue = [NSString stringWithFormat:@"Screen sharing feed failed: %@ (%d)",
+                                  event.errMessage, event.errCode];
+    }
+    [_service unpublish:Consts.SCOPE_ID what:ALMediaType.kScreen responder:nil];
+}
 
 @end
 
@@ -256,7 +280,7 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"";
+    return @"AddLiveSuperSecret";
 }
 
 + (NSString*) SCOPE_ID {

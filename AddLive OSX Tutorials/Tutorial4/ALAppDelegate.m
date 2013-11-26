@@ -41,6 +41,7 @@
 
 @implementation ALAppDelegate {
     ALService* _alService;
+    ALEventsListener* _listener;
     NSMutableArray* _mics;
     NSMutableArray* _spkrs;
     NSMutableArray* _cams;
@@ -150,6 +151,7 @@
 }
 
 - (void) setListener {
+    _listener = [[ALEventsListener alloc] initWithRenderer:_remoteVideo withUserLabel:_remoteUserIdLbl withService:_alService];
     ResultBlock onListener = ^(ALError* err, id nothing) {
         [self showVersion];
         [self fetchAudioCaptureDevices];
@@ -157,7 +159,7 @@
         [self fetchVideoCaptureDevices];
         [self startLocalVideo];
     };
-    [_alService addServiceListener:self responder:[ALResponder responderWithBlock:onListener]];
+    [_alService addServiceListener:_listener responder:[ALResponder responderWithBlock:onListener]];
 }
 
 - (void) fetchAudioCaptureDevices {

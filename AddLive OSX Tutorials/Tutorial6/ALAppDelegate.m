@@ -90,8 +90,6 @@
     ALConnectionDescriptor* descr = [[ALConnectionDescriptor alloc] init];
 
     descr.scopeId = _scopeIdTxtField.stringValue;
-    // TODO remove me
-    descr.url = [NSString stringWithFormat:@"127.0.0.1:7000/%@", descr.scopeId];
     descr.autopublishAudio = !!_publishAudioChckBx.integerValue;
     descr.autopublishVideo = !!_publishVideoChckBx.integerValue;
     NSUInteger qualityIndex = _qualitySlider.integerValue;
@@ -110,6 +108,7 @@
         _connectBtn.hidden = YES;
         _stateLabel.textColor = GREEN;
         [_stateLabel setStringValue:@"Connected."];
+        [_alService startMeasuringStats:_scopeId interval:@5 responder:nil];
     };
     _stateLabel.textColor = BLACK;
     [_stateLabel setStringValue:@"Connecting..."];
@@ -353,6 +352,9 @@
     [self onDisconnected];
 }
 
+- (void) onMediaStats:(ALMediaStatsEvent*) event {
+    NSLog(@"Got media stats event: %@", event);
+}
 
 - (void) renderRemoteSink:(NSString*) sinkId {
     ResultBlock onStopped = ^(ALError* err, id nothing) {
@@ -376,7 +378,7 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"AddLiveSuperSecret";
+    return @"";
 }
 
 
