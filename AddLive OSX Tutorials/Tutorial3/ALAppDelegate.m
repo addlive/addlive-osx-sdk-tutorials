@@ -31,6 +31,7 @@
     NSMutableArray* _mics;
     NSMutableArray* _spkrs;
     NSMutableArray* _cams;
+    BOOL _previewStarted;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -63,6 +64,21 @@
      [NSString stringWithFormat:@"Changing camera to: %@", dev.label]];
     [_alService setVideoCaptureDevice:dev.id
                             responder:[ALResponder responderWithBlock:onCam]];
+}
+
+- (IBAction) togglePreview:(id)sender {
+    if(_previewStarted) {
+        [_localVideo stop:nil];
+        [_alService stopLocalVideo:nil];
+        _previewStarted = NO;
+    } else {
+        ResultBlock onVideoStarted = ^(ALError* err, id sinkId) {
+            [_localVideo setSinkId:sinkId];
+            [_localVideo start:nil];
+            _previewStarted = YES;
+        };
+        [_alService startLocalVideo:[ALResponder responderWithBlock:onVideoStarted]];
+    }
 }
 
 - (void) onPlatformReady:(ALError*) error {
@@ -101,6 +117,7 @@
             return;
         [_localVideo setupWithService:_alService withSink:sinkId withMirror:YES];
         [_localVideo start:nil];
+        _previewStarted = YES;
     };
     [_alService startLocalVideo:[ALResponder responderWithBlock:onVideoStarted]];
 }

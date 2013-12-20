@@ -18,6 +18,6 @@
 @property (weak) IBOutlet ALVideoView *localVideo;
 
 - (IBAction) camChanged:(id)sender;
-
+- (IBAction) togglePreview:(id)sender;
 
 @end

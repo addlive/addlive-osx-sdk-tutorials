@@ -710,7 +710,7 @@
                         </textFieldCell>
                     </textField>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CxE-a5-BTC">
-                        <rect key="frame" x="164" y="125" width="207" height="26"/>
+                        <rect key="frame" x="164" y="125" width="152" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <popUpButtonCell key="cell" type="push" title="Loading...." bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="jBJ-w5-3Fq" id="pWp-Nn-W7f">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -729,6 +729,17 @@
                         <rect key="frame" x="80" y="176" width="320" height="240"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qpc-Gk-vnC">
+                        <rect key="frame" x="324" y="119" width="83" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="33i-ZE-XyV">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="togglePreview:" target="494" id="C4c-pe-Yk6"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
         </window>

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F24FC8D5185208D2004D5F8B /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8D4185208D2004D5F8B /* AddLive.framework */; };
+		F24FC8D6185208D2004D5F8B /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8D4185208D2004D5F8B /* AddLive.framework */; };
+		F24FC8D7185208D2004D5F8B /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8D4185208D2004D5F8B /* AddLive.framework */; };
+		F24FC8D8185208D2004D5F8B /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8D4185208D2004D5F8B /* AddLive.framework */; };
+		F24FC8D9185208D2004D5F8B /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8D4185208D2004D5F8B /* AddLive.framework */; };
+		F24FC8DA185208D2004D5F8B /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8D4185208D2004D5F8B /* AddLive.framework */; };
+		F24FC8DB185208D2004D5F8B /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8D4185208D2004D5F8B /* AddLive.framework */; };
+		F24FC8DC185208D2004D5F8B /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8D4185208D2004D5F8B /* AddLive.framework */; };
+		F24FC8DE18520A3B004D5F8B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
 		F278DE561842D5D900FAE456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92218415C0300D53D96 /* Cocoa.framework */; };
 		F278DE5C1842D5D900FAE456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F278DE5A1842D5D900FAE456 /* InfoPlist.strings */; };
 		F278DE5E1842D5D900FAE456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DE5D1842D5D900FAE456 /* main.m */; };
@@ -14,7 +23,6 @@
 		F278DE651842D5D900FAE456 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DE641842D5D900FAE456 /* ALAppDelegate.m */; };
 		F278DE681842D5D900FAE456 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278DE661842D5D900FAE456 /* MainMenu.xib */; };
 		F278DE6A1842D5D900FAE456 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278DE691842D5D900FAE456 /* Images.xcassets */; };
-		F278DE821842D67B00FAE456 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
 		F278DE831842D67B00FAE456 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F278DE841842D67B00FAE456 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
 		F278DE851842D67B00FAE456 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
@@ -32,7 +40,6 @@
 		F278DEA21843AA8500FAE456 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DEA11843AA8500FAE456 /* ALAppDelegate.m */; };
 		F278DEA51843AA8500FAE456 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278DEA31843AA8500FAE456 /* MainMenu.xib */; };
 		F278DEA71843AA8500FAE456 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278DEA61843AA8500FAE456 /* Images.xcassets */; };
-		F278DEBF1843AAC700FAE456 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
 		F278DEC01843AAC700FAE456 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F278DEC11843AAC700FAE456 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
 		F278DEC21843AAC700FAE456 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
@@ -49,7 +56,6 @@
 		F278DEDD1843DCA300FAE456 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DEDC1843DCA300FAE456 /* ALAppDelegate.m */; };
 		F278DEE01843DCA300FAE456 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278DEDE1843DCA300FAE456 /* MainMenu.xib */; };
 		F278DEE21843DCA300FAE456 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278DEE11843DCA300FAE456 /* Images.xcassets */; };
-		F278DEFA1843DCB900FAE456 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
 		F278DEFB1843DCB900FAE456 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F278DEFC1843DCB900FAE456 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
 		F278DEFD1843DCB900FAE456 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
@@ -66,7 +72,6 @@
 		F278DF181844157300FAE456 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DF171844157300FAE456 /* ALAppDelegate.m */; };
 		F278DF1B1844157300FAE456 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278DF191844157300FAE456 /* MainMenu.xib */; };
 		F278DF1D1844157300FAE456 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278DF1C1844157300FAE456 /* Images.xcassets */; };
-		F278DF351844158B00FAE456 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
 		F278DF361844158B00FAE456 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F278DF371844158B00FAE456 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
 		F278DF381844158B00FAE456 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
@@ -87,7 +92,6 @@
 		F282F93118415C0300D53D96 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
 		F282F93218415C0300D53D96 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
 		F282F93318415C0300D53D96 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
-		F282F93618415C3A00D53D96 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
 		F282F9961841665A00D53D96 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F282F9931841665A00D53D96 /* ALAppDelegate.m */; };
 		F282F9971841665A00D53D96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F282F9951841665A00D53D96 /* Images.xcassets */; };
 		F282F99C1841666700D53D96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F282F99A1841666700D53D96 /* main.m */; };
@@ -100,7 +104,6 @@
 		F282F9C8184169CB00D53D96 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F282F9C7184169CB00D53D96 /* ALAppDelegate.m */; };
 		F282F9CB184169CB00D53D96 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F282F9C9184169CB00D53D96 /* MainMenu.xib */; };
 		F282F9CD184169CB00D53D96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F282F9CC184169CB00D53D96 /* Images.xcassets */; };
-		F282F9EF18416C8E00D53D96 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
 		F282F9F018416C8E00D53D96 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F282F9F118416C8E00D53D96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
 		F282F9F218416C8E00D53D96 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
@@ -117,7 +120,6 @@
 		F282FA0D18417AD400D53D96 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F282FA0C18417AD400D53D96 /* ALAppDelegate.m */; };
 		F282FA1018417AD400D53D96 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F282FA0E18417AD400D53D96 /* MainMenu.xib */; };
 		F282FA1218417AD400D53D96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F282FA1118417AD400D53D96 /* Images.xcassets */; };
-		F282FA2A18417B3500D53D96 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
 		F282FA2B18417B3500D53D96 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F282FA2C18417B3500D53D96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
 		F282FA2D18417B3500D53D96 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
@@ -134,7 +136,13 @@
 		F282FA481841806200D53D96 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F282FA471841806200D53D96 /* ALAppDelegate.m */; };
 		F282FA4B1841806200D53D96 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F282FA491841806200D53D96 /* MainMenu.xib */; };
 		F282FA4D1841806200D53D96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F282FA4C1841806200D53D96 /* Images.xcassets */; };
-		F2F9EFFB184196E50057AA14 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F93518415C3A00D53D96 /* AddLive.framework */; };
+		F2AD89AA185B0B020014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
+		F2AD89AB185B0B090014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
+		F2AD89AC185B0B100014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
+		F2AD89AD185B0B1A0014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
+		F2AD89AE185B0B220014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
+		F2AD89AF185B0B2F0014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
+		F2AD89B0185B0B370014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
 		F2F9EFFC184196E50057AA14 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F2F9EFFD184196E50057AA14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
 		F2F9EFFE184196E50057AA14 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
@@ -147,6 +155,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F24FC8D4185208D2004D5F8B /* AddLive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AddLive.framework; sourceTree = "<group>"; };
+		F24FC8DD18520A3B004D5F8B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F278DE551842D5D800FAE456 /* Tutorial5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F278DE591842D5D900FAE456 /* Tutorial5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial5-Info.plist"; sourceTree = "<group>"; };
 		F278DE5B1842D5D900FAE456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -204,7 +214,6 @@
 		F282F92618415C0300D53D96 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		F282F92718415C0300D53D96 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
-		F282F93518415C3A00D53D96 /* AddLive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AddLive.framework; sourceTree = "<group>"; };
 		F282F9931841665A00D53D96 /* ALAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALAppDelegate.m; path = Tutorial1/ALAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		F282F9941841665A00D53D96 /* ALAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALAppDelegate.h; path = Tutorial1/ALAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		F282F9951841665A00D53D96 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Tutorial1/Images.xcassets; sourceTree = SOURCE_ROOT; };
@@ -249,11 +258,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F278DE821842D67B00FAE456 /* AddLive.framework in Frameworks */,
+				F2AD89AE185B0B220014ADD2 /* Security.framework in Frameworks */,
 				F278DE831842D67B00FAE456 /* OpenGL.framework in Frameworks */,
 				F278DE841842D67B00FAE456 /* AudioToolbox.framework in Frameworks */,
 				F278DE851842D67B00FAE456 /* IOKit.framework in Frameworks */,
 				F278DE861842D67C00FAE456 /* QuartzCore.framework in Frameworks */,
+				F24FC8D9185208D2004D5F8B /* AddLive.framework in Frameworks */,
 				F278DE871842D67C00FAE456 /* ApplicationServices.framework in Frameworks */,
 				F278DE881842D67C00FAE456 /* QTKit.framework in Frameworks */,
 				F278DE891842D67C00FAE456 /* CoreServices.framework in Frameworks */,
@@ -267,11 +277,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F278DEBF1843AAC700FAE456 /* AddLive.framework in Frameworks */,
+				F24FC8DE18520A3B004D5F8B /* Security.framework in Frameworks */,
 				F278DEC01843AAC700FAE456 /* OpenGL.framework in Frameworks */,
 				F278DEC11843AAC700FAE456 /* AudioToolbox.framework in Frameworks */,
 				F278DEC21843AAC700FAE456 /* IOKit.framework in Frameworks */,
 				F278DEC31843AAC700FAE456 /* QuartzCore.framework in Frameworks */,
+				F24FC8DA185208D2004D5F8B /* AddLive.framework in Frameworks */,
 				F278DEC41843AAC700FAE456 /* ApplicationServices.framework in Frameworks */,
 				F278DEC51843AAC700FAE456 /* QTKit.framework in Frameworks */,
 				F278DEC61843AAC700FAE456 /* CoreServices.framework in Frameworks */,
@@ -285,11 +296,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F278DEFA1843DCB900FAE456 /* AddLive.framework in Frameworks */,
+				F2AD89AF185B0B2F0014ADD2 /* Security.framework in Frameworks */,
 				F278DEFB1843DCB900FAE456 /* OpenGL.framework in Frameworks */,
 				F278DEFC1843DCB900FAE456 /* AudioToolbox.framework in Frameworks */,
 				F278DEFD1843DCB900FAE456 /* IOKit.framework in Frameworks */,
 				F278DEFE1843DCB900FAE456 /* QuartzCore.framework in Frameworks */,
+				F24FC8DB185208D2004D5F8B /* AddLive.framework in Frameworks */,
 				F278DEFF1843DCB900FAE456 /* ApplicationServices.framework in Frameworks */,
 				F278DF001843DCB900FAE456 /* QTKit.framework in Frameworks */,
 				F278DF011843DCB900FAE456 /* CoreServices.framework in Frameworks */,
@@ -303,11 +315,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F278DF351844158B00FAE456 /* AddLive.framework in Frameworks */,
+				F2AD89B0185B0B370014ADD2 /* Security.framework in Frameworks */,
 				F278DF361844158B00FAE456 /* OpenGL.framework in Frameworks */,
 				F278DF371844158B00FAE456 /* AudioToolbox.framework in Frameworks */,
 				F278DF381844158B00FAE456 /* IOKit.framework in Frameworks */,
 				F278DF391844158B00FAE456 /* QuartzCore.framework in Frameworks */,
+				F24FC8DC185208D2004D5F8B /* AddLive.framework in Frameworks */,
 				F278DF3A1844158B00FAE456 /* ApplicationServices.framework in Frameworks */,
 				F278DF3B1844158B00FAE456 /* QTKit.framework in Frameworks */,
 				F278DF3C1844158B00FAE456 /* CoreServices.framework in Frameworks */,
@@ -321,9 +334,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2AD89AA185B0B020014ADD2 /* Security.framework in Frameworks */,
 				F282F93018415C0300D53D96 /* QTKit.framework in Frameworks */,
 				F282F92F18415C0300D53D96 /* ApplicationServices.framework in Frameworks */,
-				F282F93618415C3A00D53D96 /* AddLive.framework in Frameworks */,
+				F24FC8D5185208D2004D5F8B /* AddLive.framework in Frameworks */,
 				F282F8EC18415B9E00D53D96 /* Cocoa.framework in Frameworks */,
 				F282F93318415C0300D53D96 /* libstdc++.6.0.9.dylib in Frameworks */,
 				F282F92D18415C0300D53D96 /* Cocoa.framework in Frameworks */,
@@ -340,11 +354,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F282F9EF18416C8E00D53D96 /* AddLive.framework in Frameworks */,
+				F2AD89AB185B0B090014ADD2 /* Security.framework in Frameworks */,
 				F282F9F018416C8E00D53D96 /* OpenGL.framework in Frameworks */,
 				F282F9F118416C8E00D53D96 /* AudioToolbox.framework in Frameworks */,
 				F282F9F218416C8E00D53D96 /* IOKit.framework in Frameworks */,
 				F282F9F318416C8E00D53D96 /* QuartzCore.framework in Frameworks */,
+				F24FC8D6185208D2004D5F8B /* AddLive.framework in Frameworks */,
 				F282F9F418416C8E00D53D96 /* ApplicationServices.framework in Frameworks */,
 				F282F9F518416C8E00D53D96 /* QTKit.framework in Frameworks */,
 				F282F9F618416C8E00D53D96 /* CoreServices.framework in Frameworks */,
@@ -358,11 +373,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F282FA2A18417B3500D53D96 /* AddLive.framework in Frameworks */,
+				F2AD89AC185B0B100014ADD2 /* Security.framework in Frameworks */,
 				F282FA2B18417B3500D53D96 /* OpenGL.framework in Frameworks */,
 				F282FA2C18417B3500D53D96 /* AudioToolbox.framework in Frameworks */,
 				F282FA2D18417B3500D53D96 /* IOKit.framework in Frameworks */,
 				F282FA2E18417B3500D53D96 /* QuartzCore.framework in Frameworks */,
+				F24FC8D7185208D2004D5F8B /* AddLive.framework in Frameworks */,
 				F282FA2F18417B3500D53D96 /* ApplicationServices.framework in Frameworks */,
 				F282FA3018417B3500D53D96 /* QTKit.framework in Frameworks */,
 				F282FA3118417B3500D53D96 /* CoreServices.framework in Frameworks */,
@@ -376,11 +392,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F9EFFB184196E50057AA14 /* AddLive.framework in Frameworks */,
+				F2AD89AD185B0B1A0014ADD2 /* Security.framework in Frameworks */,
 				F2F9EFFC184196E50057AA14 /* OpenGL.framework in Frameworks */,
 				F2F9EFFD184196E50057AA14 /* AudioToolbox.framework in Frameworks */,
 				F2F9EFFE184196E50057AA14 /* IOKit.framework in Frameworks */,
 				F2F9EFFF184196E50057AA14 /* QuartzCore.framework in Frameworks */,
+				F24FC8D8185208D2004D5F8B /* AddLive.framework in Frameworks */,
 				F2F9F000184196E50057AA14 /* ApplicationServices.framework in Frameworks */,
 				F2F9F001184196E50057AA14 /* QTKit.framework in Frameworks */,
 				F2F9F002184196E50057AA14 /* CoreServices.framework in Frameworks */,
@@ -524,7 +541,8 @@
 		F282F8EA18415B9E00D53D96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F282F93518415C3A00D53D96 /* AddLive.framework */,
+				F24FC8DD18520A3B004D5F8B /* Security.framework */,
+				F24FC8D4185208D2004D5F8B /* AddLive.framework */,
 				F282F91F18415C0300D53D96 /* OpenGL.framework */,
 				F282F92018415C0300D53D96 /* AudioToolbox.framework */,
 				F282F92118415C0300D53D96 /* IOKit.framework */,
@@ -1175,6 +1193,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial5/Tutorial5-Prefix.pch";
@@ -1196,6 +1215,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial5/Tutorial5-Prefix.pch";
@@ -1213,6 +1233,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial6/Tutorial6-Prefix.pch";
@@ -1234,6 +1255,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial6/Tutorial6-Prefix.pch";
@@ -1251,6 +1273,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial7/Tutorial7-Prefix.pch";
@@ -1272,6 +1295,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial7/Tutorial7-Prefix.pch";
@@ -1289,6 +1313,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial8/Tutorial8-Prefix.pch";
@@ -1310,6 +1335,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial8/Tutorial8-Prefix.pch";
@@ -1396,6 +1422,7 @@
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/___ALSample",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Tutorial1/Tutorial1.pch;
@@ -1414,6 +1441,7 @@
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/___ALSample",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Tutorial1/Tutorial1.pch;
@@ -1431,6 +1459,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial2/Tutorial2-Prefix.pch";
@@ -1452,6 +1481,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial2/Tutorial2-Prefix.pch";
@@ -1469,6 +1499,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
@@ -1490,6 +1521,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
@@ -1507,6 +1539,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial4/Tutorial4-Prefix.pch";
@@ -1528,6 +1561,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial4/Tutorial4-Prefix.pch";
@@ -1547,6 +1581,7 @@
 				F278DE7D1842D5D900FAE456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F278DEB91843AA8500FAE456 /* Build configuration list for PBXNativeTarget "Tutorial6" */ = {
 			isa = XCConfigurationList;
@@ -1555,6 +1590,7 @@
 				F278DEBB1843AA8500FAE456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F278DEF41843DCA400FAE456 /* Build configuration list for PBXNativeTarget "Tutorial7" */ = {
 			isa = XCConfigurationList;
@@ -1563,6 +1599,7 @@
 				F278DEF61843DCA400FAE456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F278DF2F1844157300FAE456 /* Build configuration list for PBXNativeTarget "Tutorial8" */ = {
 			isa = XCConfigurationList;
@@ -1571,6 +1608,7 @@
 				F278DF311844157300FAE456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F282F8E318415B9E00D53D96 /* Build configuration list for PBXProject "AddLive OSX Tutorials" */ = {
 			isa = XCConfigurationList;

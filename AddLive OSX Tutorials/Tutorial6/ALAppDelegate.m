@@ -99,16 +99,7 @@
     descr.authDetails.salt = @"some super random string";
     descr.authDetails.expires = time(0) + 60 * 60;
     ResultBlock onConnect = ^(ALError* err, id nothing) {
-        if([self handleErrMaybe:err where:@"connect"])
-            return;
-        _isConnected = YES;
-        // Store the scope id so the disconnect and publish/unpublish methods operate propertly
-        _scopeId = descr.scopeId;
-        _disconnectBtn.hidden = NO;
-        _connectBtn.hidden = YES;
-        _stateLabel.textColor = GREEN;
-        [_stateLabel setStringValue:@"Connected."];
-        [_alService startMeasuringStats:_scopeId interval:@5 responder:nil];
+        [self onConnectionConnected:err scope:descr.scopeId];
     };
     _stateLabel.textColor = BLACK;
     [_stateLabel setStringValue:@"Connecting..."];
@@ -210,6 +201,20 @@
     [_alService reconfigureVideo:_scopeId
                      videoStream:videoStream
                        responder:[ALResponder responderWithBlock:onReconfigure]];
+}
+
+- (void) onConnectionConnected:(ALError*) err scope:(NSString*) scopeId {
+    if([self handleErrMaybe:err where:@"connect"])
+        return;
+    _isConnected = YES;
+    // Store the scope id so the disconnect and publish/unpublish methods operate propertly
+    _scopeId = scopeId;
+    _disconnectBtn.hidden = NO;
+    _connectBtn.hidden = YES;
+    _stateLabel.textColor = GREEN;
+    [_stateLabel setStringValue:@"Connected."];
+    [_alService startMeasuringStats:_scopeId interval:@5 responder:nil];
+
 }
 
 
@@ -352,6 +357,11 @@
     [self onDisconnected];
 }
 
+- (void) onSessionReconnected:(ALSessionReconnectedEvent*) event {
+    [self onConnectionConnected:nil scope:_scopeId];
+}
+
+
 - (void) onMediaStats:(ALMediaStatsEvent*) event {
     NSLog(@"Got media stats event: %@", event);
 }
@@ -378,7 +388,7 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"";
+    return @"AddLiveSuperSecret";
 }
 
 
