@@ -58,6 +58,7 @@ This tutorial covers more advanced handling of the connectivity
 
 ## Tutorial 8 - Text chat
 
+## Tutorial 9 - Speech activity API
 
 ## License
 
