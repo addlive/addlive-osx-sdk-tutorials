@@ -108,6 +108,16 @@
                ReferencedContainer = "container:AddLive OSX Tutorials.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F2C205F5187185DB00503294"
+               BuildableName = "Tutorial9Tests.xctest"
+               BlueprintName = "Tutorial9Tests"
+               ReferencedContainer = "container:AddLive OSX Tutorials.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

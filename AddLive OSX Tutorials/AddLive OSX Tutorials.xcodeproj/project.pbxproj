@@ -143,6 +143,24 @@
 		F2AD89AE185B0B220014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
 		F2AD89AF185B0B2F0014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
 		F2AD89B0185B0B370014ADD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
+		F2C205DD187185DA00503294 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92218415C0300D53D96 /* Cocoa.framework */; };
+		F2C205E3187185DA00503294 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2C205E1187185DA00503294 /* InfoPlist.strings */; };
+		F2C205E5187185DA00503294 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C205E4187185DA00503294 /* main.m */; };
+		F2C205E9187185DA00503294 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F2C205E7187185DA00503294 /* Credits.rtf */; };
+		F2C205EC187185DA00503294 /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C205EB187185DA00503294 /* ALAppDelegate.m */; };
+		F2C205EF187185DB00503294 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C205ED187185DA00503294 /* MainMenu.xib */; };
+		F2C205F1187185DB00503294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C205F0187185DB00503294 /* Images.xcassets */; };
+		F2C20609187185E900503294 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8DD18520A3B004D5F8B /* Security.framework */; };
+		F2C2060A187185E900503294 /* AddLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FC8D4185208D2004D5F8B /* AddLive.framework */; };
+		F2C2060B187185E900503294 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
+		F2C2060C187185E900503294 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
+		F2C2060D187185E900503294 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
+		F2C2060E187185E900503294 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92318415C0300D53D96 /* QuartzCore.framework */; };
+		F2C2060F187185E900503294 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92418415C0300D53D96 /* ApplicationServices.framework */; };
+		F2C20610187185E900503294 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92518415C0300D53D96 /* QTKit.framework */; };
+		F2C20611187185E900503294 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
+		F2C20612187185E900503294 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
+		F2C20613187185E900503294 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
 		F2F9EFFC184196E50057AA14 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F2F9EFFD184196E50057AA14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
 		F2F9EFFE184196E50057AA14 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
@@ -251,6 +269,16 @@
 		F282FA471841806200D53D96 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
 		F282FA4A1841806200D53D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F282FA4C1841806200D53D96 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2C205DC187185DA00503294 /* Tutorial9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial9.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C205E0187185DA00503294 /* Tutorial9-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial9-Info.plist"; sourceTree = "<group>"; };
+		F2C205E2187185DA00503294 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2C205E4187185DA00503294 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2C205E6187185DA00503294 /* Tutorial9-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tutorial9-Prefix.pch"; sourceTree = "<group>"; };
+		F2C205E8187185DA00503294 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F2C205EA187185DA00503294 /* ALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALAppDelegate.h; sourceTree = "<group>"; };
+		F2C205EB187185DA00503294 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
+		F2C205EE187185DA00503294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F2C205F0187185DB00503294 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,6 +435,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2C205D9187185DA00503294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C20609187185E900503294 /* Security.framework in Frameworks */,
+				F2C2060A187185E900503294 /* AddLive.framework in Frameworks */,
+				F2C2060B187185E900503294 /* OpenGL.framework in Frameworks */,
+				F2C2060C187185E900503294 /* AudioToolbox.framework in Frameworks */,
+				F2C2060D187185E900503294 /* IOKit.framework in Frameworks */,
+				F2C2060E187185E900503294 /* QuartzCore.framework in Frameworks */,
+				F2C2060F187185E900503294 /* ApplicationServices.framework in Frameworks */,
+				F2C20610187185E900503294 /* QTKit.framework in Frameworks */,
+				F2C20611187185E900503294 /* CoreServices.framework in Frameworks */,
+				F2C20612187185E900503294 /* CoreAudio.framework in Frameworks */,
+				F2C20613187185E900503294 /* libstdc++.6.0.9.dylib in Frameworks */,
+				F2C205DD187185DA00503294 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -518,6 +565,7 @@
 				F278DE941843AA8500FAE456 /* Tutorial6 */,
 				F278DECF1843DCA300FAE456 /* Tutorial7 */,
 				F278DF0A1844157300FAE456 /* Tutorial8 */,
+				F2C205DE187185DA00503294 /* Tutorial9 */,
 				F282F8EA18415B9E00D53D96 /* Frameworks */,
 				F282F8E918415B9E00D53D96 /* Products */,
 			);
@@ -534,6 +582,7 @@
 				F278DE921843AA8500FAE456 /* Tutorial6.app */,
 				F278DECD1843DCA300FAE456 /* Tutorial7.app */,
 				F278DF081844157300FAE456 /* Tutorial8.app */,
+				F2C205DC187185DA00503294 /* Tutorial9.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -661,6 +710,30 @@
 				F282FA401841806200D53D96 /* main.m */,
 				F282FA421841806200D53D96 /* Tutorial4-Prefix.pch */,
 				F282FA431841806200D53D96 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2C205DE187185DA00503294 /* Tutorial9 */ = {
+			isa = PBXGroup;
+			children = (
+				F2C205EA187185DA00503294 /* ALAppDelegate.h */,
+				F2C205EB187185DA00503294 /* ALAppDelegate.m */,
+				F2C205ED187185DA00503294 /* MainMenu.xib */,
+				F2C205F0187185DB00503294 /* Images.xcassets */,
+				F2C205DF187185DA00503294 /* Supporting Files */,
+			);
+			path = Tutorial9;
+			sourceTree = "<group>";
+		};
+		F2C205DF187185DA00503294 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2C205E0187185DA00503294 /* Tutorial9-Info.plist */,
+				F2C205E1187185DA00503294 /* InfoPlist.strings */,
+				F2C205E4187185DA00503294 /* main.m */,
+				F2C205E6187185DA00503294 /* Tutorial9-Prefix.pch */,
+				F2C205E7187185DA00503294 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -804,6 +877,23 @@
 			productReference = F282FA381841806200D53D96 /* Tutorial4.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F2C205DB187185DA00503294 /* Tutorial9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C20607187185DB00503294 /* Build configuration list for PBXNativeTarget "Tutorial9" */;
+			buildPhases = (
+				F2C205D8187185DA00503294 /* Sources */,
+				F2C205D9187185DA00503294 /* Frameworks */,
+				F2C205DA187185DA00503294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tutorial9;
+			productName = Tutorial9;
+			productReference = F2C205DC187185DA00503294 /* Tutorial9.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -835,6 +925,7 @@
 				F278DE911843AA8500FAE456 /* Tutorial6 */,
 				F278DECC1843DCA300FAE456 /* Tutorial7 */,
 				F278DF071844157300FAE456 /* Tutorial8 */,
+				F2C205DB187185DA00503294 /* Tutorial9 */,
 			);
 		};
 /* End PBXProject section */
@@ -928,6 +1019,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2C205DA187185DA00503294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C205E3187185DA00503294 /* InfoPlist.strings in Resources */,
+				F2C205F1187185DB00503294 /* Images.xcassets in Resources */,
+				F2C205E9187185DA00503294 /* Credits.rtf in Resources */,
+				F2C205EF187185DB00503294 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1000,6 +1102,15 @@
 			files = (
 				F282FA411841806200D53D96 /* main.m in Sources */,
 				F282FA481841806200D53D96 /* ALAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C205D8187185DA00503294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C205E5187185DA00503294 /* main.m in Sources */,
+				F2C205EC187185DA00503294 /* ALAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1178,6 +1289,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				F282FA4A1841806200D53D96 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F2C205E1187185DA00503294 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C205E2187185DA00503294 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2C205E7187185DA00503294 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C205E8187185DA00503294 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F2C205ED187185DA00503294 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C205EE187185DA00503294 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1571,6 +1706,46 @@
 			};
 			name = Release;
 		};
+		F2C20603187185DB00503294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial9/Tutorial9-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tutorial9/Tutorial9-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2C20604187185DB00503294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tutorial9/Tutorial9-Prefix.pch";
+				INFOPLIST_FILE = "Tutorial9/Tutorial9-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1651,6 +1826,15 @@
 			buildConfigurations = (
 				F282FA601841806200D53D96 /* Debug */,
 				F282FA611841806200D53D96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C20607187185DB00503294 /* Build configuration list for PBXNativeTarget "Tutorial9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C20603187185DB00503294 /* Debug */,
+				F2C20604187185DB00503294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

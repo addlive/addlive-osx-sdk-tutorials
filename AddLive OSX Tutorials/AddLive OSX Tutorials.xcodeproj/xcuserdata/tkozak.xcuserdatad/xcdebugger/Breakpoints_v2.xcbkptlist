@@ -9,12 +9,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tutorial5/ALAppDelegate.m"
-            timestampString = "407039250.994619"
+            filePath = "Tutorial9/ALAppDelegate.m"
+            timestampString = "410116271.083393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "-applicationDidFinishLaunching:"
             landmarkType = "5">
          </BreakpointContent>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../adl/sources/saymamaplugin/dev/obj_c_api/api/src/ALService.m"
-            timestampString = "407038627.646322"
+            filePath = "../../../../adl/sources/saymamaplugin/dev/obj_c_api/api/src/ALServiceStub.mm"
+            timestampString = "410121225.429729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "-initPlatformInternal"
+            startingLineNumber = "341"
+            endingLineNumber = "341"
+            landmarkName = "-dispatchWithParams:andListeners:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../adl/sources/saymamaplugin/dev/obj_c_api/api/src/ALServiceStub.mm"
-            timestampString = "407105555.900554"
+            filePath = "../../../../adl/sources/saymamaplugin/dev/obj_c_api/api/src/ALEvents.m"
+            timestampString = "410118317.938746"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
-            landmarkName = "-handleEvent:"
+            startingLineNumber = "403"
+            endingLineNumber = "403"
+            landmarkName = "-initWithDict:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../adl/sources/saymamaplugin/dev/obj_c_api/api/src/ALServiceStub.mm"
-            timestampString = "407105555.900554"
+            filePath = "../../../../adl/sources/saymamaplugin/dev/obj_c_api/api/src/ALEvents.m"
+            timestampString = "410116383.109736"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
-            landmarkName = "-handleEvent:"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
+            landmarkName = "-initWithDict:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +73,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tutorial6/ALAppDelegate.m"
-            timestampString = "408029763.97724"
+            filePath = "../../../../adl/sources/saymamaplugin/dev/obj_c_api/api/src/ALEvents.m"
+            timestampString = "410121225.429729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "-changeQuality:"
+            startingLineNumber = "409"
+            endingLineNumber = "409"
+            landmarkName = "-initWithDict:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,13 +89,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tutorial6/ALAppDelegate.m"
-            timestampString = "407115292.232094"
+            filePath = "../../../../adl/sources/saymamaplugin/dev/obj_c_api/api/src/ALEvents.m"
+            timestampString = "410121225.429729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "-connect:"
+            startingLineNumber = "414"
+            endingLineNumber = "414"
+            landmarkName = "-initWithDict:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,94 +105,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tutorial7/ALAppDelegate.m"
-            timestampString = "407105604.287724"
+            filePath = "../../../../adl/sources/saymamaplugin/dev/obj_c_api/api/src/ALEvents.m"
+            timestampString = "410121225.429729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "-srcChanged:"
+            startingLineNumber = "412"
+            endingLineNumber = "412"
+            landmarkName = "-initWithDict:"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tutorial7/ALAppDelegate.m"
-            timestampString = "407105604.287724"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
-            landmarkName = "-onUserEvent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tutorial7/ALAppDelegate.m"
-            timestampString = "407105604.287724"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
-            landmarkName = "-onMediaStreamEvent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tutorial7/ALAppDelegate.m"
-            timestampString = "407105604.287724"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
-            landmarkName = "-onUserEvent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tutorial7/ALAppDelegate.m"
-            timestampString = "407105856.757401"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "-srcChanged:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tutorial6/ALAppDelegate.m"
-            timestampString = "408028987.166564"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "@interface ALEventsListener"
-            landmarkType = "2">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
