@@ -57,7 +57,7 @@
     ALInitOptions* options = [[ALInitOptions alloc] init];
     options.apiKey = Consts.API_KEY;
     options.applicationId = Consts.APP_ID;
-    options.streamerEndpointResolver = @"http://cnc-beta.addlive.com/resolve_streamer.do";
+//    options.streamerEndpointResolver = @"http://cnc-beta.addlive.com/resolve_streamer.do";
     [_alService initPlatform:options
                    responder:
      [ALResponder responderWithSelector:@selector(onPlatformReady:) object:self]];
@@ -81,6 +81,8 @@
             return;
         _stateLabel.textColor = GREEN;
         [_stateLabel setStringValue:@"Connected."];
+        _connectBtn.hidden = YES;
+        _disconnectBtn.hidden = NO;
     };
     _stateLabel.textColor = BLACK;
     [_stateLabel setStringValue:@"Connecting..."];
@@ -202,6 +204,7 @@
 
 - (void) showVersion {
     ResultBlock onVersion = ^(ALError* err, id value) {
+        NSLog(@"Got version: %@", value);
         NSString* stateLbl = [NSString stringWithFormat:@"Service ready. SDK v%@", value];
         _stateLabel.textColor = GREEN;
         [_stateLabel setStringValue:stateLbl];

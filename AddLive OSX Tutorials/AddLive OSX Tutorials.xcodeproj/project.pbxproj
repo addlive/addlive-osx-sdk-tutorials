@@ -32,7 +32,6 @@
 		F278DE891842D67C00FAE456 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
 		F278DE8A1842D67C00FAE456 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
 		F278DE8B1842D67C00FAE456 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
-		F278DE8D1842E2E300FAE456 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = F278DE8C1842E2E300FAE456 /* test.wav */; };
 		F278DE931843AA8500FAE456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92218415C0300D53D96 /* Cocoa.framework */; };
 		F278DE991843AA8500FAE456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F278DE971843AA8500FAE456 /* InfoPlist.strings */; };
 		F278DE9B1843AA8500FAE456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F278DE9A1843AA8500FAE456 /* main.m */; };
@@ -161,6 +160,7 @@
 		F2C20611187185E900503294 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92618415C0300D53D96 /* CoreServices.framework */; };
 		F2C20612187185E900503294 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92718415C0300D53D96 /* CoreAudio.framework */; };
 		F2C20613187185E900503294 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92818415C0300D53D96 /* libstdc++.6.0.9.dylib */; };
+		F2DFBE1E189C3EFD00F739EE /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = F2DFBE1D189C3EFD00F739EE /* test.wav */; };
 		F2F9EFFC184196E50057AA14 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F91F18415C0300D53D96 /* OpenGL.framework */; };
 		F2F9EFFD184196E50057AA14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92018415C0300D53D96 /* AudioToolbox.framework */; };
 		F2F9EFFE184196E50057AA14 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F282F92118415C0300D53D96 /* IOKit.framework */; };
@@ -185,7 +185,6 @@
 		F278DE641842D5D900FAE456 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
 		F278DE671842D5D900FAE456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F278DE691842D5D900FAE456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F278DE8C1842E2E300FAE456 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = test.wav; path = ../../../../adl/sources/saymamaplugin/test.wav; sourceTree = "<group>"; };
 		F278DE921843AA8500FAE456 /* Tutorial6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F278DE961843AA8500FAE456 /* Tutorial6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tutorial6-Info.plist"; sourceTree = "<group>"; };
 		F278DE981843AA8500FAE456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -279,6 +278,7 @@
 		F2C205EB187185DA00503294 /* ALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
 		F2C205EE187185DA00503294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F2C205F0187185DB00503294 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2DFBE1D189C3EFD00F739EE /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = test.wav; path = "../../../../../../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/D7E99BFF-B1E4-424A-AC19-6C32977F20D0/AddLive_v3/3.0.0.20/resources/test.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,7 +472,7 @@
 		F278DE581842D5D900FAE456 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F278DE8C1842E2E300FAE456 /* test.wav */,
+				F2DFBE1D189C3EFD00F739EE /* test.wav */,
 				F278DE591842D5D900FAE456 /* Tutorial5-Info.plist */,
 				F278DE5A1842D5D900FAE456 /* InfoPlist.strings */,
 				F278DE5D1842D5D900FAE456 /* main.m */,
@@ -935,7 +935,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F278DE8D1842E2E300FAE456 /* test.wav in Resources */,
+				F2DFBE1E189C3EFD00F739EE /* test.wav in Resources */,
 				F278DE5C1842D5D900FAE456 /* InfoPlist.strings in Resources */,
 				F278DE6A1842D5D900FAE456 /* Images.xcassets in Resources */,
 				F278DE621842D5D900FAE456 /* Credits.rtf in Resources */,
@@ -1325,11 +1325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial5/Tutorial5-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1347,11 +1343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial5/Tutorial5-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial5/Tutorial5-Info.plist";
@@ -1365,11 +1357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial6/Tutorial6-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1387,11 +1375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial6/Tutorial6-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial6/Tutorial6-Info.plist";
@@ -1405,11 +1389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial7/Tutorial7-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1427,11 +1407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial7/Tutorial7-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial7/Tutorial7-Info.plist";
@@ -1445,11 +1421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial8/Tutorial8-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1467,11 +1439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial8/Tutorial8-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial8/Tutorial8-Info.plist";
@@ -1496,6 +1464,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = .;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1535,6 +1504,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = .;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1553,12 +1523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/___ALSample",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Tutorial1/Tutorial1.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Tutorial1/Tutorial1.plist";
@@ -1572,12 +1537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/___ALSample",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Tutorial1/Tutorial1.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Tutorial1/Tutorial1.plist";
@@ -1591,11 +1551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial2/Tutorial2-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1613,11 +1569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial2/Tutorial2-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial2/Tutorial2-Info.plist";
@@ -1631,11 +1583,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1653,11 +1601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial3/Tutorial3-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial3/Tutorial3-Info.plist";
@@ -1671,11 +1615,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial4/Tutorial4-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1693,11 +1633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial4/Tutorial4-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial4/Tutorial4-Info.plist";
@@ -1711,11 +1647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial9/Tutorial9-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1733,11 +1665,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tkozak/Work/OSource/addlive/addlive-osx-sdk-tutorials/AddLive\\ OSX\\ Tutorials",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutorial9/Tutorial9-Prefix.pch";
 				INFOPLIST_FILE = "Tutorial9/Tutorial9-Info.plist";

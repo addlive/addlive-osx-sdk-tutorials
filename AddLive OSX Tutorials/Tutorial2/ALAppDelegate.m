@@ -173,6 +173,6 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"SomeApiKey";
+    return @"";
 }
 @end

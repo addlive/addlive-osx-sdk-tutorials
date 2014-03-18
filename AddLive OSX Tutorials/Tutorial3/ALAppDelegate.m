@@ -92,6 +92,8 @@
 
 - (void) fetchVideoCaptureDevices {
     ResultBlock onDevs = ^(ALError* err, id result) {
+        
+        NSLog(@"Got video capture devices. Err: %@", err);
         [self populateDevs:result combo:_camsSelect idsContainer:_cams];
     };
     [_alService getVideoCaptureDeviceNames:[ALResponder responderWithBlock:onDevs]];
@@ -118,15 +120,19 @@
         [_localVideo setupWithService:_alService withSink:sinkId withMirror:YES];
         [_localVideo start:nil];
         _previewStarted = YES;
+        NSLog(@"Local video started");
     };
+    [_alService startLocalVideo:[ALResponder responderWithBlock:onVideoStarted]];
     [_alService startLocalVideo:[ALResponder responderWithBlock:onVideoStarted]];
 }
 
 - (void) showVersion {
     ResultBlock onVersion = ^(ALError* err, id value) {
+        NSLog(@"Got version. Err: %@", err);
         NSString* stateLbl = [NSString stringWithFormat:@"Service ready. SDK v%@", value];
         _stateLabel.textColor = GREEN;
         [_stateLabel setStringValue:stateLbl];
+        NSLog(@"Version retrieved");
     };
     [_alService getVersion:[ALResponder responderWithBlock:onVersion]];
 }
@@ -150,6 +156,6 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"SomeApiKey";
+    return @"";
 }
 @end

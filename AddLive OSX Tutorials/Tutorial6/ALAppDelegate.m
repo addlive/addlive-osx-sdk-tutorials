@@ -61,7 +61,6 @@
     ALInitOptions* options = [[ALInitOptions alloc] init];
     options.apiKey = Consts.API_KEY;
     options.applicationId = Consts.APP_ID;
-    options.streamerEndpointResolver = @"http://cnc-beta.addlive.com/resolve_streamer.do";
     [_alService initPlatform:options
                    responder:
      [ALResponder responderWithSelector:@selector(onPlatformReady:) object:self]];
@@ -109,6 +108,9 @@
 
 - (IBAction) disconnect:(id)sender {
     ResultBlock onDisconnected = ^(ALError* err, id nothing) {
+        if(err) {
+            NSLog(@"Got disconnection error: %@", err);
+        }
         [self onDisconnected];
         _disconnectBtn.hidden = YES;
         _connectBtn.hidden = NO;
@@ -352,12 +354,14 @@
 }
 
 - (void) onConnectionLost:(ALConnectionLostEvent*) event {
+    NSLog(@"Got connection lost notification");
     _stateLabel.textColor = RED;
     _stateLabel.stringValue = @"Connection lost.";
-    [self onDisconnected];
+    [self disconnect:nil];
 }
 
 - (void) onSessionReconnected:(ALSessionReconnectedEvent*) event {
+    NSLog(@"Got session reconnected notification");
     [self onConnectionConnected:nil scope:_scopeId];
 }
 
@@ -388,7 +392,7 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"AddLiveSuperSecret";
+    return @"";
 }
 
 

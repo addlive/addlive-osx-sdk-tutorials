@@ -142,8 +142,14 @@
 }
 
 - (void) fetchAudioOutputDevices {
+    ResultBlock onDev = ^(ALError* err, id result) {
+        NSString* devId = result;
+        [_spkSelect selectItemAtIndex:[devId intValue]];
+    };
+
     ResultBlock onDevs = ^(ALError* err, id result) {
         [self populateDevs:result combo:_spkSelect idsContainer:_spkrs];
+        [_alService getAudioOutputDevice:[ALResponder responderWithBlock:onDev]];
     };
     [_alService getAudioOutputDeviceNames:[ALResponder responderWithBlock:onDevs]];
 }

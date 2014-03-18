@@ -26,9 +26,18 @@
 
 @end
 
+@interface MyListener : NSObject<ALServiceListener>
+@end
+
+@implementation MyListener
+- (void) dealloc {
+    NSLog(@"Freeing the MyListener");
+}
+@end
 
 @implementation ALAppDelegate {
     ALService* _alService;
+    MyListener* _listener;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -41,6 +50,7 @@
     ALInitOptions* options = [[ALInitOptions alloc] init];
     options.apiKey = Consts.API_KEY;
     options.applicationId = Consts.APP_ID;
+    options.initDevices = NO;
     [_platformInitBtn setHidden:YES];
     [_alService initPlatform:options
                    responder:
@@ -50,7 +60,11 @@
 - (IBAction) disposeAddLive:(id)sender {
     [_platformDisposeBtn setHidden:YES];
     [_platformInitBtn setHidden:NO];
+    [_alService removeServiceListener:_listener responder:nil];
+    _listener = nil;
     [_alService releasePlatform];
+    [_alService releasePlatform];
+    
     [_stateLabel setStringValue:@"Ready."];
     _stateLabel.textColor = BLACK;
     _alService = nil;
@@ -61,6 +75,8 @@
         return;
     }
     [_platformDisposeBtn setHidden:NO];
+    _listener =[[MyListener alloc] init];
+    [_alService addServiceListener:_listener responder:nil];
     [self showVersion];
 }
 
@@ -92,6 +108,6 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"SomeApiKey";
+    return @"";
 }
 @end

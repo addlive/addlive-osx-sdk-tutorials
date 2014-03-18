@@ -262,7 +262,7 @@
 
 + (NSString*) SCOPE_ID {
     // TODO update this to use some real value
-    return @"ADL_TUT9";
+    return @"t1233";
 }
 
 
