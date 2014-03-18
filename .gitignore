@@ -1,1 +1,5 @@
 .DS_Store
+AddLive\ OSX\ Tutorials/AddLive\ OSX\ Tutorials.xcodeproj/xcuserdata/*
+AddLive\ OSX\ Tutorials/AddLive\ OSX\ Tutorials.xcodeproj/project.xcworkspace/xcuserdata/*
+
+*.framework
