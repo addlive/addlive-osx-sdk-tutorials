@@ -55,7 +55,6 @@
     ALInitOptions* options = [[ALInitOptions alloc] init];
     options.apiKey = Consts.API_KEY;
     options.applicationId = Consts.APP_ID;
-    options.streamerEndpointResolver = @"http://cnc-beta.addlive.com/resolve_streamer.do";
     [_alService initPlatform:options
                    responder:
      [ALResponder responderWithSelector:@selector(onPlatformReady:) object:self]];
@@ -66,9 +65,7 @@
 - (IBAction) connect:(id)sender {
     ALConnectionDescriptor* descr = [[ALConnectionDescriptor alloc] init];
     descr.scopeId = Consts.SCOPE_ID;
-    
-    descr.url = [NSString stringWithFormat:@"127.0.0.1:7000/%@", descr.scopeId];
-    
+        
     descr.autopublishAudio = NO;
     descr.autopublishVideo = NO;
     descr.videoStream.maxFps = 15;

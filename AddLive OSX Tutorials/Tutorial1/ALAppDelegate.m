@@ -14,6 +14,50 @@
 #define GREEN  [NSColor colorWithDeviceRed:0 green:255 blue:0 alpha:1];
 #define BLACK  [NSColor colorWithDeviceRed:0 green:0 blue:0 alpha:1];
 
+
+@interface ALTest : NSObject
+
+- (NSString*)getSomeString;
+
+@end
+
+
+@interface ALTestImpl1 : ALTest
+
+
+@end
+
+
+@interface ALTestImpl2 : ALTest
+
+
+@end
+
+
+@implementation ALTest
+
+@end
+
+
+@implementation ALTestImpl1
+
+- (NSString*)getSomeString {
+    return @"ALTestImpl1";
+}
+
+
+@end
+
+@implementation ALTestImpl2
+
+- (NSString*)getSomeString {
+    return @"ALTestImpl2";
+}
+
+
+@end
+
+
 /**
  * Interface defining application constants. In our case it is just the
  * Application id and API key.
@@ -33,6 +77,13 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [_stateLabel setStringValue:@"App Loaded."];
+    
+    ALTest* test1 = [[ALTestImpl1 alloc] init];
+    ALTest* test2 = [[ALTestImpl2 alloc] init];
+    
+    NSLog(@"test1 says: %@", [test1 getSomeString]);
+    NSLog(@"test2 says: %@", [test2 getSomeString]);
+    
 }
 
 - (IBAction) initAddLive:(id)sender {

@@ -55,16 +55,19 @@
     _spkrs = [[NSMutableArray alloc] init];
     _cams = [[NSMutableArray alloc] init];
     [self initQualityProfiles];
+    [self performSelector:@selector(initAdl) withObject:nil afterDelay:10.0];
     
-    _alService = [[ALService alloc] init];
     
+}
+
+- (void) initAdl {
     ALInitOptions* options = [[ALInitOptions alloc] init];
     options.apiKey = Consts.API_KEY;
     options.applicationId = Consts.APP_ID;
-    options.streamerEndpointResolver = @"http://cnc-beta.addlive.com/resolve_streamer.do";
+    _alService = [[ALService alloc] init];
     [_alService initPlatform:options
                    responder:
-     [ALResponder responderWithSelector:@selector(onPlatformReady:) object:self]];
+    [ALResponder responderWithSelector:@selector(onPlatformReady:) object:self]];
 
 }
 
@@ -378,7 +381,7 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"";
+    return @"AddLiveSuperSecret";
 }
 
 

@@ -57,7 +57,7 @@
     ALInitOptions* options = [[ALInitOptions alloc] init];
     options.apiKey = Consts.API_KEY;
     options.applicationId = Consts.APP_ID;
-    options.streamerEndpointResolver = @"http://cnc-beta.addlive.com/resolve_streamer.do";
+    options.logInteractions = YES;
     [_alService initPlatform:options
                    responder:
      [ALResponder responderWithSelector:@selector(onPlatformReady:) object:self]];
@@ -68,8 +68,8 @@
 - (IBAction) connect:(id)sender {
     ALConnectionDescriptor* descr = [[ALConnectionDescriptor alloc] init];
     descr.scopeId = Consts.SCOPE_ID;
-    descr.autopublishAudio = YES;
-    descr.autopublishVideo = YES;
+    descr.autopublishAudio = NO;
+    descr.autopublishVideo = NO;
     descr.videoStream.maxFps = 15;
     descr.videoStream.maxWidth = 480;
     descr.videoStream.maxHeight = 640;
@@ -81,15 +81,29 @@
             return;
         _stateLabel.textColor = GREEN;
         [_stateLabel setStringValue:@"Connected."];
+        _connectBtn.hidden = YES;
+        _disconnectBtn.hidden = NO;
     };
     _stateLabel.textColor = BLACK;
     [_stateLabel setStringValue:@"Connecting..."];
 
     [_alService connect:descr responder:[ALResponder responderWithBlock:onConnect]];
+    
+    [NSThread sleepForTimeInterval:1.2];
+    [_alService publish:Consts.SCOPE_ID what:@"video" options:nil responder:nil];
+    [_alService publish:Consts.SCOPE_ID what:@"audio" options:nil responder:nil];
+    [_alService setAllowedSenders:Consts.SCOPE_ID mediaType:@"video" userIds:@[@123] responder:nil];
+    [_alService startMeasuringStats:Consts.SCOPE_ID interval:@2 responder:nil];
+    
+    
 }
 
 - (IBAction) disconnect:(id)sender {
-    
+    [_alService disconnect:Consts.SCOPE_ID responder:nil];
+    _stateLabel.textColor = GREEN;
+    [_stateLabel setStringValue:@"Disconnected."];
+    _connectBtn.hidden = NO;
+    _disconnectBtn.hidden = YES;
 }
 
 
@@ -277,11 +291,11 @@
 
 + (NSString*) API_KEY {
     // TODO update this to use some real value
-    return @"";
+    return @"AddLiveSuperSecret";
 }
 
 + (NSString*) SCOPE_ID {
-    return @"OSX_Test";
+    return @"iOS";
 }
 
 
